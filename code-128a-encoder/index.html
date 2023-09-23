@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="encoder.js"></script>
     <title>Code 128A Encoder</title>
@@ -49,7 +52,7 @@
       </section>
       
       <section>
-        <label for="data">Data</label>
+        <label for="data">Barcode Data</label>
         <input id="data" type="text" required=true minlength=1 spellcheck="false" />
         <button id="submit">Encode</button>
         <button id="clear">Clear</button>
@@ -57,9 +60,10 @@
       
       <section>
         <label for="output">Output (copy to Excel or Google Sheets)</label>
+        <textarea id="barcode" disabled></textarea>
         <textarea id="output" disabled></textarea>
         <button id="copy-button"><object id="copy-icon" type="image/svg+xml" data="copy-icon.svg">copy icon</object></button>
-        <p>Use font <a href="https://fonts.google.com/specimen/Libre+Barcode+128">Libre Barcode 128</a> or another equivalent to render the encoded barcode.</p>
+        <p>Use font <a href="https://fonts.google.com/specimen/Libre+Barcode+128">Libre Barcode 128</a> or another equivalent to render the encoded barcode elsewhere.</p>
       </section>
       
       <section>

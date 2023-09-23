@@ -223,6 +223,7 @@ let submitElem;
 
 let outputElem;
 let copyButtonElem;
+let barcodeElem;
 
 let stepsElem;
 
@@ -233,6 +234,7 @@ window.addEventListener("DOMContentLoaded", function() {
    
    outputElem = document.getElementById("output");
    copyButtonElem = document.getElementById("copy-button");
+   barcodeElem = document.getElementById("barcode");
    
    stepsElem = document.getElementById("steps");
    
@@ -268,7 +270,10 @@ function handleSubmitClick(e) {
    steps += `sum and remainder mod 103 are: ${sum}, ${rem}`+"\n";
    steps += "\n"+`checksum char is: ${checksumChar}`
    
-   outputElem.value = `${codeAStartChar}${data}${checksumChar}${endChar}`
+   let encodedData = `${codeAStartChar}${data}${checksumChar}${endChar}`;
+   barcodeElem.value = encodedData;
+   barcodeElem.style.height = (barcodeElem.scrollHeight-35)+"px";
+   outputElem.value = encodedData;
    
    stepsElem.value = steps;
    stepsElem.style.height = stepsElem.scrollHeight+"px";
@@ -304,6 +309,8 @@ function handleSubmitEnter(e) {
       handleSubmitClick(e);
    else if (ignoreKeys.includes(e.key) || e.ctrlKey) return;
    else {
+      barcodeElem.value = "";
+      barcodeElem.style.height = "50px";
       outputElem.value = "";
       stepsElem.value = "";
       stepsElem.style.height = "50px";
@@ -313,6 +320,8 @@ function handleSubmitEnter(e) {
 function handleClear(e) {
    e.currentTarget.blur();
    dataElem.value = "";
+   barcodeElem.value = "";
+   barcodeElem.style.height = "50px";
    outputElem.value = "";
    stepsElem.value = "";
    stepsElem.style.height = "50px";

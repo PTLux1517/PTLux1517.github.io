@@ -84,7 +84,7 @@ input, textarea {
    font-family: monospace;
    margin-top: 4px;
 }
-input:focus, textarea:focus {
+input:focus, textarea:focus, button:focus {
    outline: 1px solid hsl(248, 85%, 68%);
 }
 
@@ -96,6 +96,7 @@ textarea {
    display: block;
    height: 50px;
    resize: none;
+   overflow-y: hidden;
 }
 
 #copy-button {
@@ -108,4 +109,17 @@ textarea {
    width: 20px;
    position: relative;
    z-index: -1;
+}
+
+#barcode {
+   font-family: 'Libre Barcode 128';
+   font-size: 100px;
+   text-align: center;
+   background: white;
+   color: black;
+   padding-top: 30px;
+   padding-bottom: 0;
+}
+#output {
+   text-align: center;
 }
