@@ -1,0 +1,6 @@
+body {
+   background-color: hsl(60, 20%, 8%);
+   padding: 25px;
+   min-width: 500px;
+   color: white;
+}
