@@ -253,6 +253,7 @@ function handleSubmitClick(e) {
       alert("Data field was empty. Please enter at least one character of data to encode.");
       return;
    }
+   data = data.replace(' ','Â');
    
    var sum = charToValMap.get(codeAStartChar);
    var steps = `initial value of char set A start symbol: ${sum}`+"\n";
