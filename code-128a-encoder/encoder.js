@@ -277,7 +277,7 @@ function handleSubmitClick(e) {
    outputElem.value = encodedData;
    
    stepsElem.value = steps;
-   stepsElem.style.height = stepsElem.scrollHeight+"px";
+   stepsElem.style.height = (stepsElem.scrollHeight-20)+"px";
 }
 
 let ignoreKeys = [
@@ -332,11 +332,11 @@ function handleCopyOutput(e) {
    e.currentTarget.blur();
    let output = outputElem.value.trim();
    if (!output) {
-      alert("There is no output to copy");
+      alert("There is no output to copy.");
       return;
    }
    navigator.clipboard.writeText(output).then(
-      () => alert(output + "\nwas copied to clipboard")
+      () => alert(output + "\nwas copied to the clipboard")
    );
    if (window.getSelection) window.getSelection().removeAllRanges();
    else if (document.getSelection) document.getSelection().empty();
