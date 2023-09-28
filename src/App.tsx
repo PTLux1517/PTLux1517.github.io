@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react';
+import './App.scss';
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <title>PTLux1517</title>
-  </head>
-
-  <body>
-    <div id="main-col">
+export default function App() {
+  return <div id="main-col">
       <header>PTLux1517's Homepage</header>
-      <hr>
+      <hr/>
 
       <h2>Projects</h2>
       <ul>
@@ -45,7 +37,5 @@
 
       <h2>Leetcode</h2>
       <a href="https://github.com/PTLux1517/leetcode">Scala repo</a>
-    </div>
-  </body>
-  
-</html>
+    </div>;
+}
