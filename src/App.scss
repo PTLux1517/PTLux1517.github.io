@@ -1,13 +1,13 @@
 $minWidth: 850px;
 
 html {
-   height: 100%;
+   //height: 100%;
    background-color: hsl(60, 20%, 8%);
+   font-family: sans-serif;
 }
 
 body {
    background-color: hsl(60, 20%, 8%);
-   background-color: hsl(60,20%,8%);
    /*background-image: linear-gradient(-45deg, hsl(71,88%,73%) 0%, hsl(120,76%,70%) 31%, hsl(188,94%,65%) 53%, hsl(190,100%,64%) 70%, hsl(248,85%,68%) 90%);*/
    background-image: radial-gradient(circle at bottom, hsl(120,20%,30%), hsl(160,20%,50%));
    height: calc(100% - 50px);
@@ -15,6 +15,7 @@ body {
    padding: 25px;
    margin: 0;
    background-repeat: no-repeat;
+   background-size: cover;
    background-attachment: fixed;
    color: white;
    display: flex;
@@ -27,14 +28,107 @@ header {
    text-align: center;
 }
 
+h1 {
+   text-align: center;
+   text-transform: uppercase;
+   color: hsl(260, 65%, 54%);
+   &:before {
+      display: block;
+      content: "";
+      border-top: 2px solid hsla(0, 0%, 10%, 0.4);
+      border-radius: 2px;
+      margin-bottom: 15px;
+      width: 100%;
+   }
+}
+
 h2 {
    color: yellow;
    margin-top: 60px;
 }
 
+a {
+   text-decoration: none;
+   filter: hue-rotate(-10deg) saturate(55%) brightness(190%);
+   &:hover {
+      //filter: brightness(170%) saturate(50%) hue-rotate(-10deg);
+      text-decoration: underline;
+   }
+}
+
+li {
+   //margin-bottom: 10px;
+   //min-height: 40px;
+   //max-height: 40px;
+   height: 40px;
+   line-height: 40px;
+   //margin: 1px 0;
+   //background-color: darkgray;
+}
+
 #main-col {
-   width: 800px;
+   //height: calc(100% - 50px);
+   width: calc($minWidth - 50px);
    padding: 25px;
    border-radius: 20px;
    background-color: hsla(60, 20%, 8%, 0.5);
+}
+
+.course {
+   filter: brightness(50%);
+}
+
+.icon:not(.github-pages-combo-icon):not(.github-icon):not(.github-pages-icon) {
+   width: 800px;
+   display: block;
+   //background-color: red;
+}
+.github-pages-combo-icon {
+   width: 400px;
+   //color: red;
+   //background-color: purple;
+}
+.github-icon {
+   //color: blue;
+}
+.github-pages-icon {
+   //color: green;
+}
+.lang-icon {
+   display: inline !important;
+   width: 25px !important;
+   &.c-icon {
+      transform: translateY(7px);
+      margin: 0 2px;
+   }
+   &.go-icon {
+      transform: scale(200%) translateY(-1px);
+      margin: 0 18px;
+   }
+   &.java-icon {
+      transform: scale(120%) translateY(1px);
+   }
+   &.js-icon {
+      transform: translateY(5px);
+      margin: 0 5px;
+   }
+   &.mysql-icon {
+      transform: scale(250%);
+      margin: 0 18px;
+   }
+   &.php-icon {
+      transform: scale(180%) translateY(1px);
+      margin: 0 10px;
+   }
+   &.rust-icon {
+      transform: scale(140%) translateY(2px);
+      color: rgb(247,76,0);
+   }
+   &.scala-icon {
+      color: red;
+   }
+   &.smalltalk-icon {
+      transform: scale(140%) translateY(3px);
+      margin: 0 6px;
+   }
 }

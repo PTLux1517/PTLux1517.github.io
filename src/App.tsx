@@ -1,15 +1,16 @@
 import React from 'react';
+import {CIcon,ClinkbaitIcon,GitHubPagesComboIcon,GoIcon,ItchIOIcon,JavaIcon,JSIcon,LeetcodeIcon,LinkedInIcon,MySQLIcon,PHPIcon,RustIcon,ScalaIcon,SmalltalkIcon} from './icons';
 import './App.scss';
 
 export default function App() {
   return <div id="main-col">
       <header>PTLux1517's Homepage</header>
-      <hr/>
+
+      <h1>Public Works</h1>
 
       <h2>Projects</h2>
       <ul>
          <li>Clinkbait.com (<a href="https://clinkbait.com">deployment</a>) : A cocktail recipe app/menu for the home bartender</li>
-         <li>Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>)</li>
       </ul>
 
       <h2>GitHub Pages</h2>
@@ -18,7 +19,7 @@ export default function App() {
             <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A motion capture visualization app
             (
                <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
-               <a href="https://cs481-ekh.github.io/f22-viz-kids/">writeup</a>
+               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
             )
          </div></li>
          <li><div>
@@ -32,10 +33,54 @@ export default function App() {
       <h2>Games</h2>
       <a href="https://ptlux1517.itch.io/">itch.io</a>
 
+      <h2>Leetcode</h2>
+      <a href="https://github.com/PTLux1517/leetcode">Scala repo</a>
+
       <h2>Social Media</h2>
       <a href="https://www.linkedin.com/in/corytomlinson32/">LinkedIn</a>
 
-      <h2>Leetcode</h2>
-      <a href="https://github.com/PTLux1517/leetcode">Scala repo</a>
+      <h1>Private Works</h1>
+
+      <h2>Large Class Projects</h2>
+      <ul>
+         <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>) <JavaIcon/></li>
+         <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video</a>) <JavaIcon/></li>
+         <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/></li>
+         <li><span className="course">[Programming Languages]</span> Interpreter <JavaIcon/></li>
+         <li><span className="course">[Data Structures]</span> B-Tree Implementation <JavaIcon/></li>
+      </ul>
+
+      <h2>Mid Size Class Projects</h2>
+      <ul>
+         <li><span className="course">[Opeating Systems]</span> Keyboard Device Driver <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> User-Level Thread Library <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Multi-Threaded Web Server (bounded buffer problem) <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Page Fault Handler <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Buddy System Memory Allocator <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Lottery Scheduler <CIcon/></li>
+         <li><span className="course">[Software Engineering]</span> GitHub Bot <JSIcon/></li>
+         <li><span className="course">[Web Development]</span> Blogging Engine (<a href="https://drive.google.com/file/d/1BiPrF1FxNB2DEjuxYXh-nlAD04TJRm5K/view?usp=sharing">demo video</a>) <PHPIcon/><JSIcon/></li>
+         <li><span className="course">[Theory of Computation]</span> Recursive Descent RegEx Parser <JavaIcon/></li>
+         <li><span className="course">[Theory of Computation]</span> NFA to DFA Converter <JavaIcon/></li>
+         <li><span className="course">[Algorithms]</span> Activity Node to Event Node Graph Converter with Critical Path Info <JavaIcon/></li>
+         <li><span className="course">[Intro to Sys Programming]</span> Implementing the cat, grep, wc, sort, ps Commands <CIcon/></li>
+      </ul>
+
+      <h2>Small Class Projects</h2>
+      <ul>
+         <li><span className="course">[Algorithms]</span> 0-1 Knapsack DP Problem <JavaIcon/></li>
+         <li><span className="course">[Algorithms]</span> Knight's Tour Problem <JavaIcon/></li>
+         <li><span className="course">[Opeating Systems]</span> Character Replacement Device Driver <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Parallel Mergesort <CIcon/></li>
+         <li><span className="course">[Theory of Computation]</span> DFA <JavaIcon/></li>
+         <li><span className="course">[Programming Languages]</span> .xlsx to .html Converter (Awk)</li>
+         <li><span className="course">[Programming Languages]</span> Meeting Participant Availability Tool (Prolog)</li>
+         <li><span className="course">[Programming Languages]</span> Tree Search and Replace (Scheme)</li>
+         <li><span className="course">[Programming Languages]</span> Simple Banking System <SmalltalkIcon/><GoIcon/></li>
+         <li><span className="course">[Programming Languages]</span> Cache <RustIcon/></li>
+         <li><span className="course">[Data Structures]</span> HashTable Implementation <JavaIcon/></li>
+         <li><span className="course">[Data Structures]</span> Round Robin Scheduler with Max Heap <JavaIcon/></li>
+      </ul>
+
     </div>;
 }
