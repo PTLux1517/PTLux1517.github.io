@@ -1,5 +1,5 @@
 import React from 'react';
-import {CIcon,ClinkbaitIcon,GitHubPagesComboIcon,GoIcon,ItchIOIcon,JavaIcon,JSIcon,LeetcodeIcon,LinkedInIcon,MySQLIcon,PHPIcon,RustIcon,ScalaIcon,SmalltalkIcon} from './icons';
+import {AWKIcon,CIcon,ClinkbaitIcon,GitHubPagesComboIcon,GoIcon,ItchIOIcon,JavaIcon,JSIcon,LeetcodeIcon,LinkedInIcon,MySQLIcon,PHPIcon,PrologIcon,RustIcon,ScalaIcon,SchemeIcon,SmalltalkIcon} from './icons';
 import './App.scss';
 
 export default function App() {
@@ -10,13 +10,13 @@ export default function App() {
 
       <h2>Projects</h2>
       <ul>
-         <li>Clinkbait.com (<a href="https://clinkbait.com">deployment</a>) : A cocktail recipe app/menu for the home bartender</li>
+         <li><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app/menu for the home bartender</li>
       </ul>
 
       <h2>GitHub Pages</h2>
       <ul>
          <li><div>
-            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A motion capture visualization app
+            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization app
             (
                <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
                <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
@@ -47,7 +47,8 @@ export default function App() {
          <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video</a>) <JavaIcon/></li>
          <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/></li>
          <li><span className="course">[Programming Languages]</span> Interpreter <JavaIcon/></li>
-         <li><span className="course">[Data Structures]</span> B-Tree Implementation <JavaIcon/></li>
+         <li><span className="course">[Data Structures]</span> B-Tree Implementation (for use on disk)</li>
+         <li className="continuation"> and Human Genome Length-k DNA Subsequence Frequency Analyzer <JavaIcon/></li>
       </ul>
 
       <h2>Mid Size Class Projects</h2>
@@ -73,13 +74,20 @@ export default function App() {
          <li><span className="course">[Opeating Systems]</span> Character Replacement Device Driver <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> Parallel Mergesort <CIcon/></li>
          <li><span className="course">[Theory of Computation]</span> DFA <JavaIcon/></li>
-         <li><span className="course">[Programming Languages]</span> .xlsx to .html Converter (Awk)</li>
-         <li><span className="course">[Programming Languages]</span> Meeting Participant Availability Tool (Prolog)</li>
-         <li><span className="course">[Programming Languages]</span> Tree Search and Replace (Scheme)</li>
+         <li><span className="course">[Programming Languages]</span> .xlsx to .html Converter <AWKIcon/></li>
+         <li><span className="course">[Programming Languages]</span> Meeting Participant Availability Tool <PrologIcon/></li>
+         <li><span className="course">[Programming Languages]</span> Tree Search and Replace <SchemeIcon/></li>
          <li><span className="course">[Programming Languages]</span> Simple Banking System <SmalltalkIcon/><GoIcon/></li>
          <li><span className="course">[Programming Languages]</span> Cache <RustIcon/></li>
          <li><span className="course">[Data Structures]</span> HashTable Implementation <JavaIcon/></li>
          <li><span className="course">[Data Structures]</span> Round Robin Scheduler with Max Heap <JavaIcon/></li>
+      </ul>
+
+      <h2>Hardware Projects</h2>
+      <ul>
+         <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation</li>
+         <li className="continuation"> with 7-Segment Angle Display <CIcon/></li>
+         <li><span className="course">[Digital Systems]</span> Simon game (Xilinx Vivado & Verilog)</li>
       </ul>
 
     </div>;
