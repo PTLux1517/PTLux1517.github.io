@@ -1,11 +1,32 @@
 import React from 'react';
-import {AWKIcon,CIcon,ClinkbaitIcon,GitHubPagesComboIcon,GoIcon,ItchIOIcon,JavaIcon,JSIcon,LeetcodeIcon,LinkedInIcon,MySQLIcon,PHPIcon,PrologIcon,RustIcon,ScalaIcon,SchemeIcon,SmalltalkIcon} from './icons';
-import './App.scss';
+import {
+   AWKIcon,
+   CIcon,
+   ClinkbaitIcon,
+   GitHubIcon,
+   GitHubPagesComboIcon,
+   GoIcon,
+   GmailIcon,
+   HamburgerIcon,
+   ItchIOIcon,
+   JavaIcon,
+   JSIcon,
+   LeetcodeIcon,
+   LinkedInIcon,
+   MySQLIcon,
+   PHPIcon,
+   PrologIcon,
+   RustIcon,
+   ScalaIcon,
+   SchemeIcon,
+   SmalltalkIcon,
+   VerilogIcon,
+   XilinxIcon
+} from '../icons';
 
-export default function App() {
-  return <div id="main-col">
-      <header>PTLux1517's Homepage</header>
+export default function Works() {
 
+   return <main id="works"><div>
       <h1>Public Works</h1>
 
       <h2>Projects</h2>
@@ -18,14 +39,14 @@ export default function App() {
          <li><div>
             <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization app
             (
-               <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
-               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
+            <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
+            <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
             )
          </div></li>
          <li><div>
             <a href="https://ptlux1517.github.io/code-128a-barcode-encoder/">/code-128a-barcode-encoder</a> : A barcode data encoder for the Code 128 A character set
             (
-               <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo</a>
+            <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo</a>
             )
          </div></li>
       </ul>
@@ -36,9 +57,7 @@ export default function App() {
       <h2>Leetcode</h2>
       <a href="https://github.com/PTLux1517/leetcode">Scala repo</a>
 
-      <h2>Social Media</h2>
-      <a href="https://www.linkedin.com/in/corytomlinson32/">LinkedIn</a>
-
+      <hr/>
       <h1>Private Works</h1>
 
       <h2>Large Class Projects</h2>
@@ -83,12 +102,11 @@ export default function App() {
          <li><span className="course">[Data Structures]</span> Round Robin Scheduler with Max Heap <JavaIcon/></li>
       </ul>
 
-      <h2>Hardware Projects</h2>
+      <h2>Hardware Class Projects</h2>
       <ul>
          <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation</li>
          <li className="continuation"> with 7-Segment Angle Display <CIcon/></li>
-         <li><span className="course">[Digital Systems]</span> Simon game (Xilinx Vivado & Verilog)</li>
+         <li><span className="course">[Digital Systems]</span> Simon Game <XilinxIcon/><VerilogIcon/></li>
       </ul>
-
-    </div>;
+   </div></main>;
 }
