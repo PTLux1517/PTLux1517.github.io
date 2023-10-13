@@ -28,7 +28,6 @@ jobs:
     needs: cleanup
     runs-on: ubuntu-latest
     permissions:
-      administration: write
       pages: write
     timeout-minutes: 5
     steps:
