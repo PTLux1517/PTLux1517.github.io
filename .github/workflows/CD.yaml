@@ -9,7 +9,18 @@ on:
       - '.gitignore'
 
 jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Delete previous deployment
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GH_PAGES_TOKEN }}
+          environment: github-pages
+          onlyRemoveDeployments: true
   deploy:
+    needs: cleanup
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
