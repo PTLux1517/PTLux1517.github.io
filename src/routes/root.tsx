@@ -43,7 +43,7 @@ export default function Root() {
          <div id="profile-section">
             <nav>
                <NavLink to="" className={setClassByNavLinkStatus}>home</NavLink>
-               <NavLink to="" className={setClassByNavLinkStatus}>about</NavLink>
+               <NavLink to="about" className={setClassByNavLinkStatus}>about</NavLink>
                <NavLink to="resume" className={setClassByNavLinkStatus}>resume</NavLink>
                <NavLink to="transcript" className={setClassByNavLinkStatus}>transcript</NavLink>
             </nav>
