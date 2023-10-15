@@ -60,7 +60,6 @@ header {
       width: 180px;
       display: flex;
       align-items: center;
-
       #works-button {
          height: 70px;
          color: white;
@@ -82,8 +81,16 @@ header {
       #works-link {
          &.active {
             & + #works-label {
+               transition: color 0.5s;
                text-decoration: underline;
             }
+            &:not(:hover,:focus-visible) + #works-label {
+               transition: color 0.5s;
+               color: $yellow;
+            }
+         }
+         &:focus {
+            outline: none;
          }
       }
    }
@@ -104,11 +111,10 @@ header {
             justify-content: center;
             width: 120px;
             background: transparent;
-            transition: background-color 0.5s;
+            transition: background-color 0.5s, color 0.5s;
             &:focus {outline: none;}
             &:hover, &:focus-visible {@media (hover: hover) {
                background: $yellow;
-               //text-decoration: underline;
             }}
             &:active {
                background: $yellow;
@@ -116,8 +122,15 @@ header {
             }
          }
          & >.active {
-            //background: $yellow;
             text-decoration: underline;
+            @media (hover: none) {
+               &:not(:active) {
+                  color: $yellow;
+               }
+            }
+            &:not(:hover,:focus-visible) {
+               color: $yellow;
+            }
          }
       }
       #photo-container {
@@ -205,6 +218,7 @@ main {
       gap: 20px;
       background-image: radial-gradient(circle, $white 58%, hsla(0, 0%, 100%, 0.55)), linear-gradient(135deg, hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.1));
       #center-content {
+         animation: 2s slide-up, 5s fade-in;
          position: relative;
          top: -360px;
          .speech-bubble-icon {
@@ -214,35 +228,35 @@ main {
             color: hsl(0, 0%, 90%);
          }
          h1 {
-            font: bold 80px 'Montserrat', sans-serif;
+            font: bold 80px "Montserrat", sans-serif;
             margin: 0 -7px;
             & + div {
                color: gray;
             }
          }
-         #projects-button {
+         .link {
+            display: block;
             width: 200px;
             height: 44px;
             margin: 38px 0;
+            font: bold 24px "Montserrat", sans-serif;
+            text-decoration: none;
+            color: black;
+            outline: none;
+            &:focus {
+               outline: none;
+               text-decoration: underline;
+            }
+         }
+         #projects-button {
+            width: 200px;
+            height: 44px;
+            padding-bottom: 2px;
             border: 5px solid hsla(0,0%,0%,0.5);
             border-image-slice: 1;
             border-image-source: linear-gradient(135deg, darkmagenta, royalblue);
             box-shadow: 4px 4px 12px black;
             transition: transform 0.4s, box-shadow 0.4s;
-            .link {
-               display: block;
-               width: 100%;
-               height: 100%;
-               padding-top: 2px;
-               font: bold 24px 'Montserrat', sans-serif;
-               text-decoration: none;
-               color: black;
-               outline: none;
-               &:focus {
-                  outline: none;
-                  text-decoration: underline;
-               }
-            }
             &:hover, &:focus {
                transform: translateY(-2px) translateX(-2px);
                box-shadow: 6px 6px 18px black;
@@ -268,18 +282,14 @@ main {
                100% {border-image-source: linear-gradient(135deg, darkmagenta, royalblue);}
             }
          }
-         animation: 2s slide-up, 5s fade-in;
          @keyframes slide-up {
             0% {transform: translateY(200px);}
             100% {transform: translateY(0);}
          }
-         @keyframes fade-in {
-            0% {opacity: 0;}
-           100% {opacity: 1;}
-         }
       }
    }
    &[id="works"] {
+      animation: fade-in 2s;
       & > div {
          //background: gray;
          padding: $mainPad calc(50vw - $minWidth/2);
@@ -327,7 +337,11 @@ main {
          }
       }
    }
+   &[id="about"] {
+      animation: fade-in 2s;
+   }
    &[id="resume"] {
+      animation: fade-in 2s;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -354,6 +368,7 @@ main {
       }
    }
    &[id="transcript"] {
+      animation: fade-in 2s;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -361,24 +376,35 @@ main {
       gap: $mainPad;
       #slider-container {
          height: $mainPad;
-         width: calc(50vw - 2*$mainPad);
+         //width: calc(max(50vw - 2*$mainPad, $minWidth/2 - $mainPad));
+         width: calc(max(50vw, ($minWidth + 2*$mainPad)/2));
          display: flex;
          align-items: center;
          position: fixed;
-         left: calc(25vw + $mainPad);
-         top: $headerHeight;
+         //left: calc(max(25vw + $mainPad, $minWidth/4 + 1.5*$mainPad));
+         left: calc(max(25vw, ($minWidth + 2*$mainPad)/4));
+         top: calc($headerHeight - 2px);
          background: black;
          color: white;
          border-radius: 0 0 20px 20px;
          padding: 0 16px;
          label {
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Montserrat", sans-serif;
             font-weight: bold;
             padding-right: 15px;
          }
          #zoom-slider {
             width: 100%;
-            &:focus-visible {outline: none;}
+            &:focus-visible {
+               outline: none;
+               &:before {
+                  position: fixed;
+                  translate: -109px 20px;
+                  content: "\002328";
+                  color: $yellow;
+                  font-size: 76px;
+               }
+            }
          }
       }
       #loading-text {
@@ -520,4 +546,9 @@ footer {
          z-index: 2;
       }
    }
+}
+
+@keyframes fade-in {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
 }

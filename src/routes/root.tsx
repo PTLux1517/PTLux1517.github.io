@@ -24,20 +24,20 @@ export default function Root() {
          })();
       }
    },[googleProfileImgError]);
-   
+
    const setDocHeight = () => document.documentElement.style.setProperty('--doc-height',`${window.innerHeight}px`);
    useEffect(() => {
       window.addEventListener('resize',setDocHeight);
       setDocHeight();
    },[]);
-   
-   type t = {isActive:boolean, isPending:boolean};
-   const setClassByNavLinkStatus = ({isActive, isPending}:t) =>  isActive ? "active" : isPending ? "pending" : "";
-   
+
+   const setClassByNavLinkStatus:(_:{isActive:boolean, isPending:boolean}) => string =
+      ({isActive, isPending}) =>  isActive ? "active" : isPending ? "pending" : "";
+
    return <div id="app">
       <header>
          <div id="works-section">
-            <NavLink to="works" id="works-link" className={setClassByNavLinkStatus}><button id="works-button" className="no-style-button"><HamburgerIcon/></button></NavLink>
+            <NavLink to="works" id="works-link" className={setClassByNavLinkStatus}><button id="works-button" className="no-style-button" tabIndex={-1}><HamburgerIcon/></button></NavLink>
             <span id="works-label">works</span>
          </div>
          <div id="profile-section">
@@ -61,10 +61,10 @@ export default function Root() {
          <a href="mailto:cory@ptlux1517.mozmail.com"><GmailIcon/></a>
       </aside>
 
-      
+
       <Outlet/>
-      
-      
+
+
       <footer>
          <div id="copyright-text">&copy; {new Date().getFullYear()} Cory Tomlinson. All rights reserved.</div>
       </footer>
