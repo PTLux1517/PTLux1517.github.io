@@ -10,7 +10,7 @@ export default function Home() {
          <SpeechBubbleIcon/>
          <h1>Hey, I'm Cory,</h1>
          <div>a full stack web develeper with an interest in scalable, cloud-based solutions</div>
-         <Link className="link" to="works"><button id="projects-button" className="no-style-button">Projects</button></Link>
+         <Link className="link" to="works"><button id="projects-button" className="no-style-button" tabIndex={-1}>Projects</button></Link>
       </div>
    </main>;
 }

@@ -26,7 +26,7 @@ import {
 
 export default function Works() {
 
-   return <main id="works"><div>
+   return <main id="works"><div><div>
       <h1>Public Works</h1>
 
       <h2>Projects</h2>
@@ -108,5 +108,5 @@ export default function Works() {
          <li className="continuation"> with 7-Segment Angle Display <CIcon/></li>
          <li><span className="course">[Digital Systems]</span> Simon Game <XilinxIcon/><VerilogIcon/></li>
       </ul>
-   </div></main>;
+   </div></div></main>;
 }

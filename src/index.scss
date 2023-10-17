@@ -63,7 +63,7 @@ header {
       #works-button {
          height: 70px;
          color: white;
-         transition: color 0.5s;
+         //transition: color 0.5s;
          &:focus {outline: none;}
          &:hover, &:focus-visible {@media (hover: hover) {
             color: $yellow;
@@ -74,6 +74,7 @@ header {
          }
          > span {height: inherit;}
          .hamburger-icon {
+            transition: color 0.5s;
             height: inherit;
             margin-right: 25px;
          }
@@ -89,8 +90,14 @@ header {
                color: $yellow;
             }
          }
-         &:focus {
+         &:focus, &:hover {
             outline: none;
+            & #works-button {
+               & .hamburger-icon{
+                  transition: color 0.5s;
+                  color: $yellow;
+               }
+            }
          }
       }
    }
@@ -245,7 +252,13 @@ main {
             outline: none;
             &:focus {
                outline: none;
-               text-decoration: underline;
+               & #projects-button {
+                  //color: $yellow;
+                  text-decoration: underline;
+                  transform: translateY(-2px) translateX(-2px);
+                  box-shadow: 6px 6px 18px black;
+                  animation: rotate-border 2s linear infinite;
+               }
             }
          }
          #projects-button {
@@ -264,35 +277,44 @@ main {
                animation: rotate-border 2s linear infinite;
             }
             animation: zoom-flash 1.9s ease-in 1.6s forwards; //1.7 1.4
-            @keyframes zoom-flash {
-               50% {box-shadow: 0 0 12px yellow; transform: scale(105%);}
-               55% {box-shadow: 0 0 72px yellow;}
-            }
-            @keyframes rotate-border {
-               0% {border-image-source: linear-gradient(135deg, darkmagenta, royalblue);}
-               10% {border-image-source: linear-gradient(171deg, darkmagenta, royalblue);}
-               20% {border-image-source: linear-gradient(207deg, darkmagenta, royalblue);}
-               30% {border-image-source: linear-gradient(244deg, darkmagenta, royalblue);}
-               40% {border-image-source: linear-gradient(280deg, darkmagenta, royalblue);}
-               50% {border-image-source: linear-gradient(316deg, darkmagenta, royalblue);}
-               60% {border-image-source: linear-gradient(352deg, darkmagenta, royalblue);}
-               70% {border-image-source: linear-gradient(28deg, darkmagenta, royalblue);}
-               80% {border-image-source: linear-gradient(64deg, darkmagenta, royalblue);}
-               90% {border-image-source: linear-gradient(100deg, darkmagenta, royalblue);}
-               100% {border-image-source: linear-gradient(135deg, darkmagenta, royalblue);}
-            }
          }
          @keyframes slide-up {
             0% {transform: translateY(200px);}
             100% {transform: translateY(0);}
          }
+         @keyframes zoom-flash {
+            50% {box-shadow: 0 0 12px yellow; transform: scale(105%);}
+            55% {box-shadow: 0 0 72px yellow;}
+         }
+         @keyframes rotate-border {
+            0% {border-image-source: linear-gradient(135deg, darkmagenta, royalblue);}
+            10% {border-image-source: linear-gradient(171deg, darkmagenta, royalblue);}
+            20% {border-image-source: linear-gradient(207deg, darkmagenta, royalblue);}
+            30% {border-image-source: linear-gradient(244deg, darkmagenta, royalblue);}
+            40% {border-image-source: linear-gradient(280deg, darkmagenta, royalblue);}
+            50% {border-image-source: linear-gradient(316deg, darkmagenta, royalblue);}
+            60% {border-image-source: linear-gradient(352deg, darkmagenta, royalblue);}
+            70% {border-image-source: linear-gradient(28deg, darkmagenta, royalblue);}
+            80% {border-image-source: linear-gradient(64deg, darkmagenta, royalblue);}
+            90% {border-image-source: linear-gradient(100deg, darkmagenta, royalblue);}
+            100% {border-image-source: linear-gradient(135deg, darkmagenta, royalblue);}
+         }
       }
    }
    &[id="works"] {
-      animation: fade-in 2s;
+      animation: fade-bg-to-black 2s;
+      background: black;
       & > div {
-         //background: gray;
-         padding: $mainPad calc(50vw - $minWidth/2);
+         animation: slide-down 0.85s;
+         background: #5d5d5d;
+         //background-image: radial-gradient(circle, #666 58%, hsla(0, 0%, 80%, 0.55)), linear-gradient(135deg, hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.1));
+         border-radius: 0 20px 20px 20px;
+         margin-top: -$mainPad;
+         margin-left: -$mainPad;
+         & > div {
+            animation: fade-in 2s ease-in;
+            padding: $mainPad calc(max(50vw - $minWidth/2, $mainPad + 30px));
+         }
       }
       a {
          text-decoration: none;
@@ -310,17 +332,17 @@ main {
          border-radius: 5px;
       }
       hr {
-         border: 1px solid hsla(0,0%,0%,0.5);
-         background: hsla(0,0%,0%,0.5);
+         border: 1px solid hsl(0,0%,31%);
          margin: 60px 0;
       }
       h1, h2 {
          font-family: "Montserrat", sans-serif;
       }
       h1 {
-         text-align: center;
+         //text-align: center;
          text-transform: uppercase;
-         color: $yellow; //hsl(260, 65%, 54%) hsl(60, 100%, 30%)
+         translate: -30px 0 0;
+         color: $white; //hsl(260, 65%, 54%) hsl(60, 100%, 30%)
       }
       h2 {
          color: purple; //fallback for no gradient
@@ -415,6 +437,24 @@ main {
          top: $mainPad;
          font-size: 40px;
       }
+   }
+   @keyframes slide-down {
+      0% {transform: translateY(-3500px); width: 10px; padding: 0; overflow: hidden;}
+      //30% {width: calc(max(50%, $minWidth/2));}
+      //75% {transform: translateY(40px);}
+      //85% {transform: translateY(15px);}
+      //95% {transform: translateY(5px);}
+      //99% {overflow: hidden;}
+      100% {transform: translateY(0); width: calc(100% - 2*$mainPad);}
+   }
+   @keyframes fade-bg-to-black {
+      0% {background: transparent;}
+      100% {background: black;}
+   }
+   @keyframes fade-in-special {
+      0% {opacity: 0;}
+      90% {opacity: 0.2;}
+      100% {opacity: 1;}
    }
 }
 
@@ -527,7 +567,7 @@ footer {
       top: calc(var(--doc-height) * 0.5);
       left: 50%;
       transform: scale(2000%);
-      background-image: radial-gradient(circle, $white 55%, transparent);
+      //background-image: radial-gradient(circle, #333 65%, transparent 70%);
       &.xilinx-icon {
          background: hsla(0, 0%, 0%, 0.85);
       }
@@ -541,7 +581,7 @@ footer {
          font-size: 120px;
          line-height: 160px;
          color: black !important;
-         background-image: radial-gradient(circle, $white 55%, transparent);
+         background: $white;
          border-radius: 85px;
          z-index: 2;
       }
