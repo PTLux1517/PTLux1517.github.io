@@ -3,16 +3,12 @@ import {
    AWKIcon,
    CIcon,
    ClinkbaitIcon,
-   GitHubIcon,
    GitHubPagesComboIcon,
    GoIcon,
-   GmailIcon,
-   HamburgerIcon,
    ItchIOIcon,
    JavaIcon,
    JSIcon,
    LeetcodeIcon,
-   LinkedInIcon,
    MySQLIcon,
    PHPIcon,
    PrologIcon,
@@ -34,7 +30,7 @@ export default function Works() {
          <li><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app/menu for the home bartender</li>
       </ul>
 
-      <h2>GitHub Pages</h2>
+      <span className="text-icon-span"><h2>GitHub Pages</h2><GitHubPagesComboIcon/></span>
       <ul>
          <li><div>
             <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization app
@@ -51,11 +47,11 @@ export default function Works() {
          </div></li>
       </ul>
 
-      <h2>Games</h2>
+      <span className="text-icon-span"><h2>Games</h2><ItchIOIcon/></span>
       <a href="https://ptlux1517.itch.io/">itch.io</a>
 
-      <h2>Leetcode</h2>
-      <a href="https://github.com/PTLux1517/leetcode">Scala repo</a>
+      <span className="text-icon-span"><h2>Leetcode</h2><LeetcodeIcon/></span>
+      <span className="text-icon-span"><ScalaIcon/><a href="https://github.com/PTLux1517/leetcode">Scala repo</a></span>
 
       <hr/>
       <h1>Private Works</h1>
@@ -70,7 +66,7 @@ export default function Works() {
          <li className="continuation"> and Human Genome Length-k DNA Subsequence Frequency Analyzer <JavaIcon/></li>
       </ul>
 
-      <h2>Mid Size Class Projects</h2>
+      <h2>Midsize Class Projects</h2>
       <ul>
          <li><span className="course">[Opeating Systems]</span> Keyboard Device Driver <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> User-Level Thread Library <CIcon/></li>

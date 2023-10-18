@@ -304,6 +304,7 @@ main {
    &[id="works"] {
       animation: fade-bg-to-black 2s;
       background: black;
+      text-wrap: nowrap;
       & > div {
          animation: slide-down 0.85s;
          background: #5d5d5d;
@@ -330,6 +331,27 @@ main {
          background: hsl(0,0%,18%);
          color: hsl(0,0%,60%);
          border-radius: 5px;
+      }
+      .text-icon-span {
+         display: flex;
+         align-items: end;
+         gap: 20px;
+         &:has(h2) {
+            margin-top: 60px;
+            margin-bottom: 0.83em; //default h2 value
+         }
+         & h2 {
+            margin: 0;
+         }
+         & .icon {
+            color: #484848;
+         }
+         & .icon:not(.github-icon,.github-pages-icon) {
+            width: 36px;
+         }
+         & .github-pages-combo-icon {
+            width: 60px;
+         }
       }
       hr {
          border: 1px solid hsl(0,0%,31%);
@@ -440,11 +462,13 @@ main {
    }
    @keyframes slide-down {
       0% {transform: translateY(-3500px); width: 10px; padding: 0; overflow: hidden;}
+      //0% {min-height: 10px; max-height: 10px; width: 10px; padding: 0; overflow: hidden;}
       //30% {width: calc(max(50%, $minWidth/2));}
       //75% {transform: translateY(40px);}
       //85% {transform: translateY(15px);}
       //95% {transform: translateY(5px);}
       //99% {overflow: hidden;}
+      //100% {min-height: calc(var(--doc-height) - $headerHeight - $footerHeight - 2*$mainPad); width: calc(100% - 2*$mainPad);}
       100% {transform: translateY(0); width: calc(100% - 2*$mainPad);}
    }
    @keyframes fade-bg-to-black {
