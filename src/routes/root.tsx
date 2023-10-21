@@ -26,9 +26,14 @@ export default function Root() {
    },[googleProfileImgError]);
 
    const setDocHeight = () => document.documentElement.style.setProperty('--doc-height',`${window.innerHeight}px`);
+   const setDocWidth = () => document.documentElement.style.setProperty('--doc-width',`${window.innerWidth}px`);
+
    useEffect(() => {
       window.addEventListener('resize',setDocHeight);
+      window.addEventListener('resize',setDocWidth);
       setDocHeight();
+      setDocWidth();
+      //console.log(`w: ${window.innerWidth}px, h: ${window.innerHeight}px`);
    },[]);
 
    const setClassByNavLinkStatus:(_:{isActive:boolean, isPending:boolean}) => string =

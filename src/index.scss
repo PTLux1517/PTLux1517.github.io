@@ -11,6 +11,8 @@ $shadow: hsla(0,0%,0%,0.35);
 
 :root {
    --doc-height: 100%;
+   --doc-width: 100%;
+   --scroll-height: 100%;
 }
 
 html, body {
@@ -359,6 +361,29 @@ main {
                width: 31.25%;
                //margin: 0 1%;
                border-radius: 5px;
+               &.active {
+                  position: fixed;
+                  left: $mainPad;
+                  top: calc($headerHeight + $mainPad);
+                  width: calc(var(--doc-width) - 3*$mainPad);
+                  z-index: 2;
+                  &:hover {
+                     cursor: zoom-out;
+                  }
+               }
+               &:not(.active):hover {
+                  cursor: zoom-in;
+               }
+            }
+            &:has(img.active):before {
+               content: "";
+               position: fixed;
+               top: $headerHeight;
+               left: 0;
+               width: var(--doc-width);
+               height: var(--doc-height);
+               backdrop-filter: blur(30px);
+               z-index: 1;
             }
          }
          &:not(.active) {
@@ -478,6 +503,7 @@ main {
       #resume-iframe {
          width: 845px;
          height: 1164px;
+         border: none;
       }
       #download-link {
          display: block;
@@ -493,22 +519,25 @@ main {
             text-decoration: underline;
          }
       }
+      #loading-text {
+         font-size: 40px;
+         position: absolute;
+         top: 0;
+      }
    }
    &[id="transcript"] {
       animation: fade-in 2s;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
+      //display: flex;
+      //flex-direction: column;
+      //align-items: start;
       text-align: center;
       gap: $mainPad;
       #slider-container {
          height: $mainPad;
-         //width: calc(max(50vw - 2*$mainPad, $minWidth/2 - $mainPad));
          width: calc(max(50vw, ($minWidth + 2*$mainPad)/2));
          display: flex;
          align-items: center;
          position: fixed;
-         //left: calc(max(25vw + $mainPad, $minWidth/4 + 1.5*$mainPad));
          left: calc(max(25vw, ($minWidth + 2*$mainPad)/4));
          top: calc($headerHeight - 2px);
          background: black;
@@ -535,23 +564,14 @@ main {
          }
       }
       #loading-text {
-         $width: 400px;
-         width: $width;
          position: absolute;
-         left: calc(50vw - $width/2);
+         width: calc(var(--doc-width) - 2*$mainPad);
          top: $mainPad;
          font-size: 40px;
       }
    }
    @keyframes slide-down {
       0% {transform: translateY(-3500px); width: 10px; padding: 0; overflow: hidden;}
-      //0% {min-height: 10px; max-height: 10px; width: 10px; padding: 0; overflow: hidden;}
-      //30% {width: calc(max(50%, $minWidth/2));}
-      //75% {transform: translateY(40px);}
-      //85% {transform: translateY(15px);}
-      //95% {transform: translateY(5px);}
-      //99% {overflow: hidden;}
-      //100% {min-height: calc(var(--doc-height) - $headerHeight - $footerHeight - 2*$mainPad); width: calc(100% - 2*$mainPad);}
       100% {transform: translateY(0); width: calc(100% - 2*$mainPad);}
    }
    @keyframes fade-bg-to-black {
@@ -665,34 +685,45 @@ footer {
       border-radius: 2px;
       background: hsla(0, 0%, 0%, 0.85);
    }
-   &:hover {
-      cursor: zoom-in;
-   }
-   &:active {
+   &.active {
       position: fixed;
       z-index: 1;
       top: calc(var(--doc-height) * 0.5);
       left: 50%;
       transform: scale(2000%);
-      //background-image: radial-gradient(circle, #333 65%, transparent 70%);
       &.xilinx-icon {
          background: hsla(0, 0%, 0%, 0.85);
       }
       & + .subtext {
          position: fixed;
          text-align: center;
-         top: calc(var(--doc-height) * 0.71) !important;
+         top: calc(0.5*var(--doc-height) + 270px) !important;
          left: calc(50% - 385px);
          width: 800px;
          height: 170px;
          font-size: 120px;
          line-height: 160px;
-         color: black !important;
-         background: $white;
-         border-radius: 85px;
+         color: white !important;
          z-index: 2;
       }
+      &:hover {
+         cursor: zoom-out;
+      }
    }
+   &:not(.active):hover {
+      cursor: zoom-in;
+   }
+}
+
+:has(.lang-icon.active):before {
+   content: "";
+   position: fixed;
+   top: $headerHeight;
+   left: 0;
+   width: var(--doc-width);
+   height: var(--doc-height);
+   backdrop-filter: blur(4px);
+   z-index: 1;
 }
 
 @keyframes fade-in {

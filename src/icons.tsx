@@ -1,6 +1,11 @@
 import * as React from "react";
 
-const Icon = (props: React.SVGAttributes<SVGElement>) => <span><svg viewBox="0 0 24 24" fill="currentColor" {...props} /><span className="subtext" style={{color: "transparent", position: "fixed", top: "-50px"}}>{props.name}</span></span>;
+const toggleActive:React.MouseEventHandler = ({currentTarget}) => currentTarget.classList.toggle("active");
+
+const Icon = (props: React.SVGAttributes<SVGElement>) => <span>
+   <svg viewBox="0 0 24 24" fill="currentColor" {...props} onClick={toggleActive}/>
+   <span className="subtext" style={{color: "transparent", position: "fixed", top: "-50px"}}>{props.name}</span>
+</span>;
 
 export const AWKIcon = () => <Icon name="AWK" className="icon lang-icon awk-icon" viewBox="0 0 491 512">
    <title>AWK</title>

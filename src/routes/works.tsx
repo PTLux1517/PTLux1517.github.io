@@ -26,30 +26,35 @@ import {
 
 export default function Works() {
 
+   const toggleActive:React.MouseEventHandler = ({currentTarget}) => currentTarget.classList.toggle("active");
+
    return <main id="works"><div><div>
       <h1>Public Works</h1>
 
       <h2>Projects</h2>
       <Collapsible
          buttonContent={<>
-            <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app/menu for the home bartender
+            <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app for the home bartender which doubles as a menu for guests
          </>}
          innerContent={<>{
-            `hidden
-            1
-            2
-            3`
+            `description coming soon`
          }</>}
       />
 
       <span className="text-icon-span"><h2 className="no-underline">GitHub Pages</h2><GitHubPagesComboIcon/></span>
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization and analysis tool
+            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization and analysis tool&emsp;(Boise State University senior design project)
          </>}
          innerContent={<>
-            <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
-            <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
+            <div style={{minWidth: "100%"}}>
+               <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
+               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
+            </div>
+            <img src="https://drive.google.com/uc?export=view&id=19m_-A74W_B1zWyDcxXbmMVJJLT0x8sFD" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://drive.google.com/uc?export=view&id=1kjyfqBLoUxYX303JKAFAjzyq7a005GD0" onClick={toggleActive}/>
+            <img src="https://drive.google.com/uc?export=view&id=1jPBvFOVrIarbKkUwLiE6jshbl6JIe9n0" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://drive.google.com/uc?export=view&id=1RSxZ0iQ2DjIVMu_cO2y1gbCkNLq3ANJw" onClick={toggleActive}/>
          </>}
       />
       <Collapsible
@@ -68,15 +73,14 @@ export default function Works() {
             <a href="https://ptlux1517.itch.io/project-horizon">Project Horizon</a> : third-person mech combat
          </>}
          innerContent={<>
-            <img src="https://img.itch.zone/aW1nLzYyNzc2MTgucG5n/original/gWI0R6.png" alt="Project Horizon game theme"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0Mjk4LnBuZw==/347x500/wW4CnY.png" alt="Project Horizon gameplay 1"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MzE2LnBuZw==/347x500/Sm%2B6gF.png" alt="Project Horizon gameplay 2"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDI5LnBuZw==/347x500/SWHl7P.png" alt="Project Horizon gameplay 3"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDEzLnBuZw==/347x500/xoz9Wk.png" alt="Project Horizon gameplay 4"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU4LnBuZw==/347x500/qVrwkY.png" alt="Project Horizon gameplay 5"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU0LnBuZw==/347x500/EBTXxt.png" alt="Project Horizon gameplay 6"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTUwLnBuZw==/347x500/2R58Ff.png" alt="Project Horizon gameplay 7"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MjkyLnBuZw==/347x500/DQUzRs.png" alt="Project Horizon gameplay 8"/>
+            <img src="https://img.itch.zone/aW1nLzYyNzc2MTgucG5n/original/gWI0R6.png" alt="Project Horizon game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDI5LnBuZw==/original/OtCIYm.png" alt="Project Horizon gameplay 1" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDEzLnBuZw==/original/KAquB5.png" alt="Project Horizon gameplay 2" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MzE2LnBuZw==/original/%2BHTqV%2B.png" alt="Project Horizon gameplay 3" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU4LnBuZw==/original/o%2B43tF.png" alt="Project Horizon gameplay 4" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU0LnBuZw==/original/wXxS60.png" alt="Project Horizon gameplay 5" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTUwLnBuZw==/original/XEf3ss.png" alt="Project Horizon gameplay 6" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MjkyLnBuZw==/original/PMHw0U.png" alt="Project Horizon gameplay 7" onClick={toggleActive}/>
          </>}
       />
       <Collapsible
@@ -84,15 +88,14 @@ export default function Works() {
             <a href="https://ptlux1517.itch.io/suns-out-guns-out">Sun's Out Guns Out!</a> : low-poly runner
          </>}
          innerContent={<>
-            <img src="https://img.itch.zone/aW1nLzY0MDgzMzgucG5n/original/4oJUDF.png" alt="Sun's Out Guns Out game theme"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzM4LnBuZw==/347x500/hkHQuK.png" alt="Sun's Out Guns Out gameplay 1"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzYxLnBuZw==/347x500/uu3Z8u.png" alt="Sun's Out Guns Out gameplay 2"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzY2LnBuZw==/347x500/thVC7u.png" alt="Sun's Out Guns Out gameplay 3"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2Mzc0LnBuZw==/347x500/b5RTaj.png" alt="Sun's Out Guns Out gameplay 4"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzkxLnBuZw==/347x500/gvDxlD.png" alt="Sun's Out Guns Out gameplay 5"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDI3LnBuZw==/347x500/W053zD.png" alt="Sun's Out Guns Out gameplay 6"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDMzLnBuZw==/347x500/wb2t5L.png" alt="Sun's Out Guns Out gameplay 7"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDA1LnBuZw==/347x500/O5WTJL.png" alt="Sun's Out Guns Out gameplay 8"/>
+            <img src="https://img.itch.zone/aW1nLzY0MDgzMzgucG5n/original/4oJUDF.png" alt="Sun's Out Guns Out game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzYxLnBuZw==/original/FaK%2BQX.png" alt="Sun's Out Guns Out gameplay 1" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzM4LnBuZw==/original/AD%2FgnL.png" alt="Sun's Out Guns Out gameplay 2" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzY2LnBuZw==/original/B7IGpq.png" alt="Sun's Out Guns Out gameplay 3" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2Mzc0LnBuZw==/original/rrUhAL.png" alt="Sun's Out Guns Out gameplay 4" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDI3LnBuZw==/original/%2FT7kX8.png" alt="Sun's Out Guns Out gameplay 5" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDMzLnBuZw==/original/ly3ZG5.png" alt="Sun's Out Guns Out gameplay 6" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDA1LnBuZw==/original/bzU%2BLF.png" alt="Sun's Out Guns Out gameplay 7" onClick={toggleActive}/>
          </>}
       />
       <Collapsible
@@ -100,15 +103,14 @@ export default function Works() {
             <a href="https://ptlux1517.itch.io/icarus">Icarus</a> : dungeon/maze crawler with flight
          </>}
          innerContent={<>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3OTY0LnBuZw==/347x500/P5XHjc.png" alt="Icarus game theme"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTI4LnBuZw==/347x500/wlfLDF.png" alt="Icarus gameplay 1"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDQ5LnBuZw==/347x500/et5G3Z.png" alt="Icarus gameplay 2"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDYwLnBuZw==/347x500/IhGOih.png" alt="Icarus gameplay 3"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDgzLnBuZw==/347x500/lOY70b.png" alt="Icarus gameplay 4"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDk1LnBuZw==/347x500/n7tz0f.png" alt="Icarus gameplay 5"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTE1LnBuZw==/347x500/yx0Gm5.png" alt="Icarus gameplay 6"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTIxLnBuZw==/347x500/2zJc5M.png" alt="Icarus gameplay 7"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTc5LnBuZw==/347x500/lWSkOZ.png" alt="Icarus gameplay 8"/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3OTY0LnBuZw==/original/BG7%2Bm8.png" alt="Icarus game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDk1LnBuZw==/original/KR%2FODw.png" alt="Icarus gameplay 1" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDYwLnBuZw==/original/t845d8.png" alt="Icarus gameplay 2" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTI4LnBuZw==/original/OXG%2BCD.png" alt="Icarus gameplay 3" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDQ5LnBuZw==/original/BlAxW7.png" alt="Icarus gameplay 4" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTE1LnBuZw==/original/GJAhjs.png" alt="Icarus gameplay 5" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTIxLnBuZw==/original/iFPRLd.png" alt="Icarus gameplay 6" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTc5LnBuZw==/original/a%2FC0Ow.png" alt="Icarus gameplay 7" onClick={toggleActive}/>
          </>}
       />
       <Collapsible
@@ -116,12 +118,13 @@ export default function Works() {
             <a href="https://ptlux1517.itch.io/portal-hunter">Portal Hunter</a> : dungeon crawler with puzzles
          </>}
          innerContent={<>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5Njg5LnBuZw==/347x500/ElB0kp.png" alt="Portal Hunter game theme"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NjkwLnBuZw==/347x500/aYdIBi.png" alt="Portal Hunter gameplay 1"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzU3LnBuZw==/347x500/SXUt5m.png" alt="Portal Hunter gameplay 2"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzQ4LnBuZw==/347x500/lWUaeg.png" alt="Portal Hunter gameplay 3"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzYyLnBuZw==/347x500/X3sA%2F9.png" alt="Portal Hunter gameplay 4"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzA3LnBuZw==/347x500/fjXBNb.png" alt="Portal Hunter gameplay 5"/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5Njg5LnBuZw==/original/2o0OYt.png" alt="Portal Hunter game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NjkwLnBuZw==/original/xpCJnd.png" alt="Portal Hunter gameplay 1" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzU3LnBuZw==/original/oYGR0x.png" alt="Portal Hunter gameplay 2" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzQ4LnBuZw==/original/xVPl94.png" alt="Portal Hunter gameplay 3" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzYyLnBuZw==/original/yo7MZ%2F.png" alt="Portal Hunter gameplay 4" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzA3LnBuZw==/original/5IhAVH.png" alt="Portal Hunter gameplay 5" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzE0LnBuZw==/original/PQgro8.png" alt="Portal Hunter gameplay 6" onClick={toggleActive}/>
          </>}
       />
       <Collapsible
@@ -129,11 +132,10 @@ export default function Works() {
             <a href="https://ptlux1517.itch.io/asteroid-escape">Asteroid Escape</a> : space flight survival
          </>}
          innerContent={<>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxMzY0LnBuZw==/347x500/syDsqC.png" alt="Asteroid Escape game theme"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDE1LnBuZw==/347x500/4OXlAk.png" alt="Asteroid Escape gameplay 1"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDQ3LnBuZw==/347x500/%2BB6Ko5.png" alt="Asteroid Escape gameplay 2"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDUzLnBuZw==/347x500/XuQpAf.png" alt="Asteroid Escape gameplay 3"/>
-            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDU2LnBuZw==/347x500/XZPCz4.png" alt="Asteroid Escape gameplay 4"/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxMzY0LnBuZw==/original/N8DyNS.png" alt="Asteroid Escape game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDE1LnBuZw==/original/ZRp4ZB.png" alt="Asteroid Escape gameplay 1" onClick={toggleActive}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDQ3LnBuZw==/original/LOVxb8.png" alt="Asteroid Escape gameplay 2" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDU2LnBuZw==/original/wApqIu.png" alt="Asteroid Escape gameplay 3" onClick={toggleActive}/>
          </>}
       />
 
