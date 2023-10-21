@@ -304,6 +304,7 @@ main {
       }
    }
    &[id="works"] {
+      $worksPad: calc(max(50vw - $minWidth/2, $mainPad + 30px));
       animation: fade-bg-to-black 2s;
       background: black;
       text-wrap: nowrap;
@@ -316,14 +317,16 @@ main {
          margin-left: -$mainPad;
          & > div {
             animation: fade-in 2s ease-in;
-            padding: $mainPad calc(max(50vw - $minWidth/2, $mainPad + 30px));
+            padding: $mainPad $worksPad;
          }
       }
       .collapsible {
+         $collapsiblePad: 18px;
+         $collapsibleContentPad: 20px;
          background: #585858;
          //margin-left: 24px;
          margin-top: 5px;
-         padding: 6px 18px;
+         padding: 6px $collapsiblePad;
          width: 100%;
          text-align: left;
          //transition: border-radius 0.25s;
@@ -349,7 +352,7 @@ main {
             width: 100%;
             border-radius: 0 0 20px 20px;
             & > div {
-               padding: 20px;
+               padding: $collapsibleContentPad;
                display: flex;
                flex-wrap: wrap;
                justify-content: space-between;
@@ -384,6 +387,12 @@ main {
                height: var(--doc-height);
                backdrop-filter: blur(30px);
                z-index: 1;
+            }
+            .game-demo-video {
+               width: 100%;
+               min-width: calc(100vw - 2*$worksPad - 3*$collapsiblePad - 2*$collapsibleContentPad);
+               border-radius: 5px;
+               aspect-ratio: 16/9;
             }
          }
          &:not(.active) {
@@ -632,9 +641,24 @@ footer {
       transform: scale(120%) translateY(5px);
       color: black;
    }
+   &.aws-icon {
+      margin: 0 8px;
+   }
+   &.aws-service-icon {
+      border-radius: 3px;
+      margin: 0 5px;
+      translate: 0 3px;
+   }
    &.c-icon {
       transform: translateY(7px);
       margin: 0 2px;
+   }
+   &.docker-icon {
+      scale: 125%;
+      margin: 0 5px 0 10px;
+   }
+   &.github-actions-icon {
+      translate: 0 2px;
    }
    &.go-icon {
       transform: scale(200%) translateY(-1px);
@@ -642,6 +666,10 @@ footer {
    }
    &.java-icon {
       transform: scale(120%) translateY(1px);
+   }
+   &.jest-icon {
+      translate: 0 3px;
+      margin: 0 5px;
    }
    &.js-icon {
       transform: translateY(5px);
@@ -655,8 +683,17 @@ footer {
       transform: scale(180%) translateY(1px);
       margin: 0 10px;
    }
+   &.picocli-icon {
+      scale: 280%;
+      translate: 0 -6px;
+      margin: 0 22px 0 27px;
+   }
    &.prolog-icon {
       transform: scale(155%) translateY(1px);
+      margin: 0 6px;
+   }
+   &.react-icon {
+      translate: 0 3px;
       margin: 0 6px;
    }
    &.rust-icon {
@@ -665,6 +702,7 @@ footer {
    }
    &.scala-icon {
       color: red;
+      translate: 0 3px;
    }
    &.scheme-icon {
       transform: scale(170%) translateY(1px);
@@ -673,6 +711,19 @@ footer {
    &.smalltalk-icon {
       transform: scale(140%) translateY(3px);
       margin: 0 6px;
+   }
+   &.terraform-icon {
+      translate: 0 4px;
+   }
+   &.threejs-icon {
+      background: #FAFAFA99;
+      border-radius: 3px;
+      translate: 0 3px;
+      margin: 0 1px;
+   }
+   &.typescript-icon {
+      translate: 0 3px;
+      margin: 0 1px;
    }
    &.verilog-icon {
       transform: scale(140%) translateY(4px);
@@ -713,6 +764,14 @@ footer {
    &:not(.active):hover {
       cursor: zoom-in;
    }
+}
+.blender-icon {
+   scale: 115%;
+   translate: -6px 2px;
+}
+.unreal-icon {
+   scale: 98%;
+   translate: -3px 2px;
 }
 
 :has(.lang-icon.active):before {

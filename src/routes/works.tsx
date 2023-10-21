@@ -2,26 +2,42 @@ import React from 'react';
 import Collapsible from "../components/collapsible";
 import {
    AWKIcon,
+   AWSIcon,
+   AWSAPIGatewayIcon,
+   AWSAuroraIcon,
+   AWSCloudFrontIcon,
+   AWSEC2Icon,
+   AWSLambdaIcon,
+   AWSRoute53Icon,
+   AWSS3Icon,
    BlenderIcon,
    BSUIcon,
    CIcon,
    ClinkbaitIcon,
+   DockerIcon,
+   GitHubActionsIcon,
    GitHubPagesComboIcon,
    GoIcon,
    ItchIOIcon,
    JavaIcon,
+   JestIcon,
    JSIcon,
    LeetcodeIcon,
    MySQLIcon,
    PHPIcon,
+   PicoCLIIcon,
    PrologIcon,
+   ReactIcon,
    RustIcon,
    ScalaIcon,
    SchemeIcon,
    SmalltalkIcon,
+   TerraformIcon,
+   ThreeJSIcon,
+   TypeScriptIcon,
    UnrealIcon,
    VerilogIcon,
-   XilinxIcon
+   XilinxIcon,GitHubIcon
 } from '../icons';
 
 export default function Works() {
@@ -36,20 +52,25 @@ export default function Works() {
          buttonContent={<>
             <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app for the home bartender which doubles as a menu for guests
          </>}
-         innerContent={<>{
-            `description coming soon`
-         }</>}
+         innerContent={<>
+            <div>
+               <TypeScriptIcon/><ReactIcon/><JavaIcon/><MySQLIcon/><TerraformIcon/><AWSIcon/>(<AWSCloudFrontIcon/><AWSRoute53Icon/><AWSAPIGatewayIcon/><AWSLambdaIcon/><AWSS3Icon/><AWSAuroraIcon/>)
+            </div>
+         </>}
       />
 
       <span className="text-icon-span"><h2 className="no-underline">GitHub Pages</h2><GitHubPagesComboIcon/></span>
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization and analysis tool&emsp;(Boise State University senior design project)
+            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization and analysis tool&emsp;(BSU senior design project)
          </>}
          innerContent={<>
-            <div style={{minWidth: "100%"}}>
-               <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a> |
-               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>
+            <div style={{minWidth: "50%"}}>
+               <TypeScriptIcon/><ReactIcon/><ThreeJSIcon/><JestIcon/><GitHubActionsIcon/>
+            </div>
+            <div>
+               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>{" | "}
+               <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a>
             </div>
             <img src="https://drive.google.com/uc?export=view&id=19m_-A74W_B1zWyDcxXbmMVJJLT0x8sFD" onClick={toggleActive} style={{minWidth: "50%"}}/>
             <img src="https://drive.google.com/uc?export=view&id=1kjyfqBLoUxYX303JKAFAjzyq7a005GD0" onClick={toggleActive}/>
@@ -62,6 +83,9 @@ export default function Works() {
             <a href="https://ptlux1517.github.io/code-128a-barcode-encoder/">/code-128a-barcode-encoder</a> : A barcode data encoder for the Code 128 A character set
          </>}
          innerContent={<>
+            <div style={{minWidth: "50%"}}>
+               <JSIcon/>
+            </div>
             <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo</a>
          </>}
       />
@@ -81,6 +105,7 @@ export default function Works() {
             <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU0LnBuZw==/original/wXxS60.png" alt="Project Horizon gameplay 5" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTUwLnBuZw==/original/XEf3ss.png" alt="Project Horizon gameplay 6" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MjkyLnBuZw==/original/PMHw0U.png" alt="Project Horizon gameplay 7" onClick={toggleActive}/>
+            <iframe className="game-demo-video" src="https://www.youtube.com/embed/AdHmx18_ZNc" title="Project Horizon Gameplay Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
          </>}
       />
       <Collapsible
@@ -96,6 +121,7 @@ export default function Works() {
             <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDI3LnBuZw==/original/%2FT7kX8.png" alt="Sun's Out Guns Out gameplay 5" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDMzLnBuZw==/original/ly3ZG5.png" alt="Sun's Out Guns Out gameplay 6" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDA1LnBuZw==/original/bzU%2BLF.png" alt="Sun's Out Guns Out gameplay 7" onClick={toggleActive}/>
+            <iframe className="game-demo-video" src="https://www.youtube.com/embed/Z7R8HRskiFw" title="Sun&#39;s Out Guns Out Gameplay Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
          </>}
       />
       <Collapsible
@@ -111,6 +137,7 @@ export default function Works() {
             <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTE1LnBuZw==/original/GJAhjs.png" alt="Icarus gameplay 5" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTIxLnBuZw==/original/iFPRLd.png" alt="Icarus gameplay 6" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTc5LnBuZw==/original/a%2FC0Ow.png" alt="Icarus gameplay 7" onClick={toggleActive}/>
+            <iframe className="game-demo-video" src="https://www.youtube.com/embed/dzEwrDTMOtI" title="Icarus Gameplay Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
          </>}
       />
       <Collapsible
@@ -125,6 +152,7 @@ export default function Works() {
             <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzYyLnBuZw==/original/yo7MZ%2F.png" alt="Portal Hunter gameplay 4" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzA3LnBuZw==/original/5IhAVH.png" alt="Portal Hunter gameplay 5" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzE0LnBuZw==/original/PQgro8.png" alt="Portal Hunter gameplay 6" onClick={toggleActive}/>
+            <iframe className="game-demo-video" src="https://www.youtube.com/embed/qGv7wtGdXeM" title="Portal Hunter Game Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
          </>}
       />
       <Collapsible
@@ -136,6 +164,7 @@ export default function Works() {
             <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDE1LnBuZw==/original/ZRp4ZB.png" alt="Asteroid Escape gameplay 1" onClick={toggleActive}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDQ3LnBuZw==/original/LOVxb8.png" alt="Asteroid Escape gameplay 2" onClick={toggleActive} style={{minWidth: "50%"}}/>
             <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDU2LnBuZw==/original/wApqIu.png" alt="Asteroid Escape gameplay 3" onClick={toggleActive}/>
+            <iframe className="game-demo-video" src="https://www.youtube.com/embed/TtBE7kOhu-c" title="Asteroid Escape Game Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
          </>}
       />
 
@@ -147,7 +176,7 @@ export default function Works() {
 
       <h2>Large Class Projects</h2>
       <ul>
-         <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>) <JavaIcon/></li>
+         <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
          <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video</a>) <JavaIcon/></li>
          <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/></li>
          <li><span className="course">[Programming Languages]</span> Interpreter <JavaIcon/></li>
