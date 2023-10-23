@@ -5,6 +5,9 @@ $minWidth: 1250px;
 $headerHeight: 108px;
 $footerHeight: 52px;
 
+$resumeWidth: 845px;
+$resumeHeight: 1164px;
+
 $white: hsl(0, 0%, 98%);
 $yellow: hsl(60, 100%, 40%);
 $shadow: hsla(0,0%,0%,0.35);
@@ -14,6 +17,12 @@ $shadow: hsla(0,0%,0%,0.35);
    --doc-width: 100%;
    --scroll-height: 100%;
 }
+
+//@media screen and (max-width: 1440px) {html {zoom: calc(1440/1680);}}
+//@media screen and (max-width: 1280px) {html {zoom: calc(1280/1680);}}
+//@media screen and (max-width: 1024px) {html {zoom: calc(1024/1680);}}
+//@media screen and (max-width: 824px) {html {zoom: calc(824/1680);}}
+//@media screen and (max-width: 768px) {html {zoom: calc(768/1680);}}
 
 html, body {
    background-color: $white;
@@ -684,7 +693,8 @@ footer {
       margin: 0 10px;
    }
    &.picocli-icon {
-      scale: 280%;
+      transform: scale(140%);
+      scale: 200%;
       translate: 0 -6px;
       margin: 0 22px 0 27px;
    }
@@ -741,7 +751,7 @@ footer {
       z-index: 1;
       top: calc(var(--doc-height) * 0.5);
       left: 50%;
-      transform: scale(2000%);
+      transform: scale(1600%);
       &.xilinx-icon {
          background: hsla(0, 0%, 0%, 0.85);
       }

@@ -33,7 +33,24 @@ export default function Root() {
       window.addEventListener('resize',setDocWidth);
       setDocHeight();
       setDocWidth();
-      //console.log(`w: ${window.innerWidth}px, h: ${window.innerHeight}px`);
+      console.log(`w: ${window.innerWidth}px, h: ${window.innerHeight}px`);
+   },[]);
+
+   useEffect(() => {
+      const iPhone = navigator.userAgent.includes("iPhone");
+      const chrome = navigator.userAgent.includes("Chrome");
+      const fireFox = navigator.userAgent.includes("Firefox");
+      const edge = navigator.userAgent.includes("Edge");
+      if (!chrome || iPhone || fireFox || edge) {
+         alert(
+            `[Unsupported device or browser]
+
+            This website is a personal project designed for use with the Google Chrome browser, with limited support for mobile devices.
+
+            If possible, for the intended experience, it is recommended to view on a desktop or laptop computer via Google Chrome.
+            `.replace(/ {12}/g,"")
+         );
+      }
    },[]);
 
    const setClassByNavLinkStatus:(_:{isActive:boolean, isPending:boolean}) => string =

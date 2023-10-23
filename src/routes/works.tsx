@@ -37,7 +37,7 @@ import {
    TypeScriptIcon,
    UnrealIcon,
    VerilogIcon,
-   XilinxIcon,GitHubIcon
+   XilinxIcon
 } from '../icons';
 
 export default function Works() {
@@ -53,9 +53,15 @@ export default function Works() {
             <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app for the home bartender which doubles as a menu for guests
          </>}
          innerContent={<>
-            <div>
+            <div style={{minWidth: "100%"}}>
                <TypeScriptIcon/><ReactIcon/><JavaIcon/><MySQLIcon/><TerraformIcon/><AWSIcon/>(<AWSCloudFrontIcon/><AWSRoute53Icon/><AWSAPIGatewayIcon/><AWSLambdaIcon/><AWSS3Icon/><AWSAuroraIcon/>)
             </div>
+            <img src="https://drive.google.com/uc?export=view&id=1gnK-z1AdkdI6srUh8mZolJpk7JXOLDOe" onClick={toggleActive} style={{minWidth: "50%"}}/>
+            <img src="https://drive.google.com/uc?export=view&id=1cxxBFs7wU2_W_jqrec60r3Enn_Qa7Opo" onClick={toggleActive}/>
+            <img src="https://drive.google.com/uc?export=view&id=11zck80LwXeIbMTp0KjG9FXDCdxTthw7_" onClick={toggleActive}/>
+            <img src="https://drive.google.com/uc?export=view&id=16ZV9XIUVh2r1kIWZa1f9umQpQaMs4Uo5" onClick={toggleActive}/>
+            <img src="https://drive.google.com/uc?export=view&id=1EUjgHQ-Q3PE03gaCRi7Iw_58H9pjcViI" onClick={toggleActive}/>
+            <img src="https://drive.google.com/uc?export=view&id=1sBrg1vEi3sPibxlh5eapbEFVJXgnipPo" onClick={toggleActive}/>
          </>}
       />
 
@@ -83,10 +89,14 @@ export default function Works() {
             <a href="https://ptlux1517.github.io/code-128a-barcode-encoder/">/code-128a-barcode-encoder</a> : A barcode data encoder for the Code 128 A character set
          </>}
          innerContent={<>
-            <div style={{minWidth: "50%"}}>
+            <div style={{minWidth: "80%"}}>
                <JSIcon/>
             </div>
-            <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo</a>
+            <div>
+               <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo</a>
+            </div>
+            <img src="https://drive.google.com/uc?export=view&id=1PtcxbyiL__HICoJHmExH07_cCWjkpfzp" onClick={toggleActive}/>
+            <img src="https://drive.google.com/uc?export=view&id=1BLiDhfQIOJe1xFvyIoYm27519QIZNaoj" onClick={toggleActive} style={{minWidth: "54%"}}/>
          </>}
       />
 
