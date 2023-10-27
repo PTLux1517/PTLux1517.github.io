@@ -510,6 +510,66 @@ main {
    &[id="about"] {
       animation: fade-in 2s;
    }
+   &[id="skills"] {
+      animation: fade-in 2s;
+      background-image: radial-gradient(circle, $white 58%, hsla(0, 0%, 100%, 0.55)), linear-gradient(135deg, hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.1));
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      //justify-content: center;
+      //align-items: flex-start;
+      gap: 15px;
+      & > div {
+         background: #5d5d5d;
+         border-radius: 15px;
+         padding: 25px;
+         box-shadow: 5px 5px 15px;
+      }
+      h2 {
+         font-family: "Montserrat", sans-serif;
+         color: $yellow; //fallback for no gradient
+         background: -webkit-linear-gradient(-90deg, darkmagenta, royalblue);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         margin-top: 0;
+         white-space: pre;
+         &:not(.no-underline) {
+            border-bottom: 1px solid #555;
+         }
+      }
+      h3 {
+         margin: 40px 0 0 0;
+      }
+      ul {
+         list-style: none;
+         padding-left: 0;
+      }
+      li {
+         &:not(:last-child) {
+            margin-bottom: 8px;
+         }
+         display: grid;
+         grid-template-columns: [logo]80px [lang]auto;
+         grid-column-gap: 5px;
+         > :nth-child(1) {
+            justify-self: center;
+         }
+         > :nth-child(2) {
+            justify-self: left;
+         }
+         &.indent {
+            margin-left: 80px;
+         }
+      }
+      .unreal-icon {
+         color: #484848;
+         width: 25px;
+      }
+      .blender-icon {
+         color: #484848;
+         width: 25px;
+      }
+   }
    &[id="resume"] {
       animation: fade-in 2s;
       display: flex;
