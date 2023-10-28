@@ -1,6 +1,7 @@
 import React from 'react';
 import Collapsible from "../components/collapsible";
 import {
+   ASMIcon,
    AWKIcon,
    AWSIcon,
    AWSAPIGatewayIcon,
@@ -20,6 +21,7 @@ import {
    GoIcon,
    ItchIOIcon,
    JavaIcon,
+   JavaFXIcon,
    JestIcon,
    JSIcon,
    LeetcodeIcon,
@@ -188,7 +190,7 @@ export default function Works() {
       <ul>
          <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
          <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video</a>) <JavaIcon/></li>
-         <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/></li>
+         <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/><JavaFXIcon/></li>
          <li><span className="course">[Programming Languages]</span> Interpreter <JavaIcon/></li>
          <li><span className="course">[Data Structures]</span> B-Tree Implementation (for use on disk)</li>
          <li className="continuation"> and Human Genome Length-k DNA Subsequence Frequency Analyzer <JavaIcon/></li>
@@ -229,7 +231,7 @@ export default function Works() {
       <h2>Hardware Class Projects</h2>
       <ul>
          <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation</li>
-         <li className="continuation"> with 7-Segment Angle Display <CIcon/></li>
+         <li className="continuation"> with 7-Segment Angle Display <CIcon/><ASMIcon/></li>
          <li><span className="course">[Digital Systems]</span> Simon Game <XilinxIcon/><VerilogIcon/></li>
       </ul>
    </div></div></main>;
