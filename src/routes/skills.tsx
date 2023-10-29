@@ -77,7 +77,7 @@ import {
 export default function Skills() {
    return <main id="skills">
       <div>
-         <h2>Languages</h2>
+         <span className="h2-bg"><h2>Languages</h2></span>
          <h3>Primary</h3>
          <ul>
             <li><JavaIcon/><span>Java</span></li>
@@ -109,11 +109,11 @@ export default function Skills() {
 
 
       <div>
-         <h2>{
+         <span className="h2-bg"><h2>{
             `Frameworks
             & Libraries`
             .replace(/ {12}/g,"")
-         }</h2>
+         }</h2></span>
          <ul>
             <li><ReactIcon/><span>React.js</span></li>
             <li><ReactRouterIcon/><span>React Router</span></li>
@@ -126,7 +126,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>Cloud & DevOps</h2>
+         <span className="h2-bg"><h2>Cloud & DevOps</h2></span>
          <ul>
             <li><GitHubActionsIcon /><span>GitHub Actions CI/CD</span></li>
             <li><TerraformIcon /><span>Terraform</span></li>
@@ -138,9 +138,9 @@ export default function Skills() {
             <li className="indent"><AWSS3Icon /><span>S3,</span></li>
             <li className="indent"><AWSAuroraIcon /><span>RDS Aurora Serverless,</span></li>
             <li className="indent"><AWSEC2Icon /><span>EC2,</span></li>
-            <li className="indent"><AWSCloudWatchIcon/><span>Cloudwatch</span></li>
+            <li className="indent"><AWSCloudWatchIcon/><span>Cloudwatch,</span></li>
             <li className="indent"><AWSIAMIcon/><span>IAM,</span></li>
-            <li className="indent"><AWSSecretsManagerIcon/><span>Secrets Manager</span></li>
+            <li className="indent"><AWSSecretsManagerIcon/><span>Secrets Manager,</span></li>
             <li className="indent"><AWSCertificateManagerIcon/><span>Certificate Manager</span></li>
             <li><span></span><span>]</span></li>
             <li><DockerIcon /><span>Docker</span></li>
@@ -149,7 +149,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>Other</h2>
+         <span className="h2-bg"><h2>Other</h2></span>
          <ul>
             <li><GitIcon/><span>Git</span></li>
             <li><VirtualBoxIcon/><span>VirtualBox</span></li>
@@ -158,7 +158,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>Build/Package</h2>
+         <span className="h2-bg"><h2>Build/Package</h2></span>
          <ul>
             <li><NPMIcon/><span>npm</span></li>
             <li><WebpackIcon/><span>Webpack</span></li>
@@ -171,7 +171,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>Testing</h2>
+         <span className="h2-bg"><h2>Testing</h2></span>
          <ul>
             <li><JestIcon/><span>Jest</span></li>
             <li><JUnitIcon/><span>JUnit</span></li>
@@ -180,7 +180,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>Game Dev</h2>
+         <span className="h2-bg"><h2>Game Dev</h2></span>
          <ul>
             <li><UnrealIcon /><span>Unreal Engine</span></li>
             <li><BlenderIcon /><span>Blender</span></li>
@@ -188,7 +188,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>IDE</h2>
+         <span className="h2-bg"><h2>IDE</h2></span>
          <ul>
             <li><IntelliJIcon/><span>IntelliJ</span></li>
             <li><PHPStormIcon/><span>PHPStorm</span></li>
@@ -200,7 +200,7 @@ export default function Skills() {
       </div>
 
       <div>
-         <h2>Operating System</h2>
+         <span className="h2-bg"><h2>Operating System</h2></span>
          <ul>
             <li><LinuxIcon/><span>Linux [</span></li>
             <li className="indent"><UbuntuIcon/><span>Ubuntu,</span></li>

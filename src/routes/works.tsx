@@ -49,7 +49,7 @@ export default function Works() {
    return <main id="works"><div><div>
       <h1>Public Works</h1>
 
-      <h2>Projects</h2>
+      <div className="spacer"><span className="h2-bg"><h2>Projects</h2></span></div>
       <Collapsible
          buttonContent={<>
             <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app for the home bartender which doubles as a menu for guests
@@ -67,7 +67,7 @@ export default function Works() {
          </>}
       />
 
-      <span className="text-icon-span"><h2 className="no-underline">GitHub Pages</h2><GitHubPagesComboIcon/></span>
+      <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">GitHub Pages</h2><GitHubPagesComboIcon/></span></div>
       <Collapsible
          buttonContent={<>
             <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization and analysis tool&emsp;(BSU senior design project)
@@ -102,7 +102,7 @@ export default function Works() {
          </>}
       />
 
-      <span className="text-icon-span"><h2 className="no-underline">Games</h2><ItchIOIcon/><UnrealIcon/><BlenderIcon/></span>
+      <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">Games</h2><ItchIOIcon/><UnrealIcon/><BlenderIcon/></span></div>
       <div><a href="https://ptlux1517.itch.io/">itch.io creator homepage</a></div><br/>
       <Collapsible
          buttonContent={<>
@@ -180,13 +180,13 @@ export default function Works() {
          </>}
       />
 
-      <span className="text-icon-span"><h2 className="no-underline">Leetcode</h2><LeetcodeIcon/></span>
+      <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">Leetcode</h2><LeetcodeIcon/></span></div>
       <span className="text-icon-span"><ScalaIcon/><a href="https://github.com/PTLux1517/leetcode/tree/main/src/main/scala/com/github/ptlux1517/leetcode">Scala repo</a></span>
 
       <hr/>
       <span className="text-icon-span"><h1>Private Works</h1><BSUIcon/></span>
 
-      <h2>Large Class Projects</h2>
+      <div className="spacer"><span className="h2-bg"><h2>Large Class Projects</h2></span></div>
       <ul>
          <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
          <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video</a>) <JavaIcon/></li>
@@ -196,7 +196,7 @@ export default function Works() {
          <li className="continuation"> and Human Genome Length-k DNA Subsequence Frequency Analyzer <JavaIcon/></li>
       </ul>
 
-      <h2>Midsize Class Projects</h2>
+      <div className="spacer"><span className="h2-bg"><h2>Midsize Class Projects</h2></span></div>
       <ul>
          <li><span className="course">[Opeating Systems]</span> Keyboard Device Driver <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> User-Level Thread Library <CIcon/></li>
@@ -212,7 +212,7 @@ export default function Works() {
          <li><span className="course">[Intro to Sys Programming]</span> Implementing the cat, grep, wc, sort, ps Commands <CIcon/></li>
       </ul>
 
-      <h2>Small Class Projects</h2>
+      <div className="spacer"><span className="h2-bg"><h2>Small Class Projects</h2></span></div>
       <ul>
          <li><span className="course">[Algorithms]</span> 0-1 Knapsack DP Problem <JavaIcon/></li>
          <li><span className="course">[Algorithms]</span> Knight's Tour Problem <JavaIcon/></li>
@@ -228,7 +228,7 @@ export default function Works() {
          <li><span className="course">[Data Structures]</span> Round Robin Scheduler with Max Heap <JavaIcon/></li>
       </ul>
 
-      <h2>Hardware Class Projects</h2>
+      <div className="spacer"><span className="h2-bg"><h2>Hardware Class Projects</h2></span></div>
       <ul>
          <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation</li>
          <li className="continuation"> with 7-Segment Angle Display <CIcon/><ASMIcon/></li>

@@ -25,15 +25,26 @@ export default function Root() {
       }
    },[googleProfileImgError]);
 
-   const setDocHeight = () => document.documentElement.style.setProperty('--doc-height',`${window.innerHeight}px`);
-   const setDocWidth = () => document.documentElement.style.setProperty('--doc-width',`${window.innerWidth}px`);
-
    useEffect(() => {
-      window.addEventListener('resize',setDocHeight);
+      const setDocWidth = () => {
+         document.documentElement.style.setProperty('--doc-width',`${window.innerWidth}px`);
+         document.documentElement.style.setProperty('--doc-w',`${window.innerWidth}`);
+         //console.log(`w: ${window.innerWidth}px`);
+      };
+      const setDocHeight = () => {
+         document.documentElement.style.setProperty('--doc-height',`${window.innerHeight}px`);
+         document.documentElement.style.setProperty('--doc-h',`${window.innerHeight}`);
+         //console.log(`h: ${window.innerHeight}px`);
+         //console.log("");
+      };
       window.addEventListener('resize',setDocWidth);
-      setDocHeight();
+      window.addEventListener('resize',setDocHeight);
       setDocWidth();
-      console.log(`w: ${window.innerWidth}px, h: ${window.innerHeight}px`);
+      setDocHeight();
+      return () => {
+         window.removeEventListener('resize',setDocWidth);
+         window.removeEventListener('resize',setDocHeight);
+      };
    },[]);
 
    useEffect(() => {

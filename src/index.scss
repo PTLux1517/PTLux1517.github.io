@@ -3,7 +3,8 @@
 
 $minWidth: 1250px;
 $headerHeight: 108px;
-$footerHeight: 52px;
+$footerHeight: 46px;
+$mainZoom: calc(min(var(--doc-w)/1200, var(--doc-h)/1800));
 
 $resumeWidth: 845px;
 $resumeHeight: 1164px;
@@ -15,6 +16,8 @@ $shadow: hsla(0,0%,0%,0.35);
 :root {
    --doc-height: 100%;
    --doc-width: 100%;
+   --doc-h: 100%;
+   --doc-w: 100%;
    --scroll-height: 100%;
 }
 
@@ -236,6 +239,7 @@ main {
       gap: 20px;
       background-image: radial-gradient(circle, $white 58%, hsla(0, 0%, 100%, 0.55)), linear-gradient(135deg, hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.1));
       #center-content {
+         zoom: $mainZoom;
          animation: 2s slide-up, 5s fade-in;
          position: relative;
          top: -360px;
@@ -453,10 +457,10 @@ main {
          display: flex;
          gap: 20px;
          &:has(h2) {
-            margin-top: 60px;
-            margin-bottom: 0.83em; //default h2 value
+            //margin-top: 60px;
+            //margin-bottom: 0.83em; //default h2 value
             align-items: end;
-            border-bottom: 1px solid #555;
+            //border-bottom: 1px solid #555;
          }
          & h1, h2 {
             margin: 0;
@@ -477,7 +481,7 @@ main {
          }
       }
       hr {
-         border: 1px solid hsl(0,0%,31%);
+         border: 1px solid hsl(0,0%,45%); //31%l
          margin: 90px 0;
       }
       h1, h2 {
@@ -489,15 +493,27 @@ main {
          translate: -30px 0 0;
          color: $white; //hsl(260, 65%, 54%) hsl(60, 100%, 30%)
       }
+      .h2-bg {
+         width: calc(max(100vw - 2*$worksPad - 100px, $minWidth - (100px + $mainPad)));
+         height: 50px;
+         background-image: linear-gradient(-130deg, hsl(0,0%,36%,1) 2%, hsla(0,0%,0%,0.1)), linear-gradient(180deg, #444, #0A0A0A);
+         border-radius: 50px 10px 50px 10px;
+         position: absolute;
+         padding: 5px 20px 0;
+         box-shadow: #CCCC0066 0 2px 12px;
+         clip-path: inset(0 0 -18px 0 round 50px 10px 50px 10px);
+      }
+      .spacer {
+         height: 55px;
+         margin-top: 55px;
+         margin-bottom: 20px;
+      }
       h2 {
          color: purple; //fallback for no gradient
          background: -webkit-linear-gradient(-90deg, darkmagenta, royalblue);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
-         margin-top: 60px;
-         &:not(.no-underline) {
-            border-bottom: 1px solid #555;
-         }
+         margin: 0;
       }
       li {
          height: 40px;
@@ -512,7 +528,6 @@ main {
    }
    &[id="skills"] {
       animation: fade-in 2s;
-      background-image: radial-gradient(circle, $white 58%, hsla(0, 0%, 100%, 0.55)), linear-gradient(135deg, hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.1));
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -520,11 +535,26 @@ main {
       //align-items: center;
       align-content: safe center;
       gap: 15px;
+      background-image:
+            radial-gradient(circle, hsla(0, 0%, 100%, 0.21) 58%, hsla(0, 0%, 100%, 0.27)),
+            linear-gradient(135deg, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.1)),
+            url("https://drive.google.com/uc?export=view&id=1XWUzQ85lVPHTda7485GWxh2kD3LQ4EDY");
+      background-size: cover;
+      background-repeat: repeat;
       & > div {
          background: #5d5d5d;
-         border-radius: 15px;
-         padding: 25px;
-         box-shadow: 5px 5px 15px;
+         border-radius: 12px;
+         box-shadow: 5px 5px 15px, #494949 0 0 80px inset;
+         outline: 2px solid #333;
+         display: grid;
+         grid-template-rows: auto auto;
+      }
+      .h2-bg {
+         background-image: linear-gradient(180deg, #444, #0A0A0A);
+         border-radius: 12px 12px 0 0;
+         padding: 10px 20px 5px 20px;
+         box-shadow: #CCCC00BB 0 2px 12px, #222 0 0 20px inset;
+         clip-path: inset(0 0 -18px 0 round 12px);
       }
       h2 {
          font-family: "Montserrat", sans-serif;
@@ -532,14 +562,11 @@ main {
          background: -webkit-linear-gradient(-90deg, darkmagenta, royalblue);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
-         margin-top: 0;
+         margin: 0;
          white-space: pre;
-         &:not(.no-underline) {
-            border-bottom: 1px solid #555;
-         }
       }
       h3 {
-         margin: 40px 0 0 0;
+         margin: 30px 0 0 20px;
       }
       ul {
          list-style: none;
@@ -552,6 +579,7 @@ main {
          display: grid;
          grid-template-columns: [logo]70px [lang]auto;
          grid-column-gap: 5px;
+         margin: 0 20px;
          > :nth-child(1) {
             justify-self: center;
          }
@@ -851,8 +879,10 @@ footer {
       scale: 140%;
    }
    &.rust-icon {
-      transform: scale(140%) translateY(2px);
-      color: rgb(247,76,0);
+      scale: 120%;
+      translate: 0 4px;
+      margin: 0 3px;
+      color: rgb(230,110,0);
    }
    &.sass-icon {
       scale: 125%;
@@ -916,19 +946,19 @@ footer {
       z-index: 1;
       top: calc(var(--doc-height) * 0.5);
       left: 50%;
-      transform: scale(1600%);
+      transform: scale(calc(1600% * $mainZoom));
       &.xilinx-icon {
          background: hsla(0, 0%, 0%, 0.85);
       }
       & + .subtext {
          position: fixed;
          text-align: center;
-         top: calc(0.5*var(--doc-height) + 270px) !important;
+         top: calc(0.5*var(--doc-height) + $mainZoom*270px) !important;
          left: calc(50% - 385px);
          width: 800px;
          height: 170px;
-         font-size: 120px;
-         line-height: 160px;
+         font-size: calc($mainZoom*120px);
+         line-height: calc($mainZoom*160px);
          color: white !important;
          z-index: 2;
       }
