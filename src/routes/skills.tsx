@@ -81,13 +81,17 @@ export default function Skills() {
          <h3>Primary</h3>
          <ul>
             <li><JavaIcon/><span>Java</span></li>
-            <li><div><JSIcon/><TypeScriptIcon/><SassIcon/><HTMLIcon/></div><span>JavaScript/TypeScript, CSS/Sass, HTML</span></li>
+            <li><div><JSIcon/><TypeScriptIcon/><SassIcon/><HTMLIcon/></div><span>{
+               `JavaScript/TypeScript,
+               CSS/Sass, HTML`
+               .replace(/ {15}/g,"")
+            }</span></li>
             <li><CIcon/><span>C</span></li>
             <li><MySQLIcon/><span>SQL</span></li>
          </ul>
          <h3>Secondary</h3>
          <ul>
-            <li><ScalaIcon/><span>Scala (currently moving toward primary)</span></li>
+            <li><ScalaIcon/><span>Scala</span></li>
             <li><HaskellIcon/><span>Haskell</span></li>
             <li><RustIcon/><span>Rust</span></li>
             <li><BashIcon/><span>Bash</span></li>
@@ -200,7 +204,11 @@ export default function Skills() {
       </div>
 
       <div>
-         <span className="h2-bg"><h2>Operating System</h2></span>
+         <span className="h2-bg"><h2>{
+            `Operating
+            System`
+            .replace(/ {12}/g,"")
+         }</h2></span>
          <ul>
             <li><LinuxIcon/><span>Linux [</span></li>
             <li className="indent"><UbuntuIcon/><span>Ubuntu,</span></li>

@@ -3,6 +3,7 @@ import React, {useEffect,useRef,useState} from 'react';
 export default function Transcript() {
 
    const imgElem = useRef<HTMLImageElement>(null);
+   const mainElem = useRef<HTMLDivElement>(null);
    const [loading, setLoading] = useState(true);
    const [zoom, setZoom] = useState(0.5);
 
@@ -10,7 +11,33 @@ export default function Transcript() {
       imgElem?.current?.style?.setProperty("width",`${9900*zoom}px`);
    }, [zoom, imgElem]);
 
-   return <main id="transcript">
+   useEffect(() => {
+      if (!mainElem.current) return;
+      let main = mainElem.current;
+      let isDrag = false;
+      const dragOn = () => isDrag = true;
+      const dragOff = () => isDrag = false;
+      const drag = (ev:PointerEvent) => {
+         if (isDrag) {
+            main.scrollLeft -= ev.movementX;
+            main.scrollTop -= ev.movementY;
+         }
+      };
+
+      main.addEventListener("pointerdown", dragOn);
+      main.addEventListener("pointerup", dragOff);
+      main.addEventListener("pointermove", drag);
+      main.addEventListener("pointerleave", dragOff);
+
+      return () => {
+         main.removeEventListener("pointerdown", dragOn);
+         main.removeEventListener("pointerup", dragOff);
+         main.removeEventListener("pointermove", drag);
+         main.removeEventListener("pointerleave", dragOff);
+      };
+   },[]);
+
+   return <main ref={mainElem} id="transcript">
       <div id="slider-container">
          <label htmlFor="zoom">zoom: </label>
          <input id="zoom-slider"
@@ -29,6 +56,7 @@ export default function Transcript() {
          alt="college transcript"
          style={{width: "4950px"}}
          onLoad={() => setLoading(false)}
+         onPointerDown={e => e.preventDefault()}
       />
    </main>;
 }

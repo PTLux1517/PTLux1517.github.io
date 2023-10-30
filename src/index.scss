@@ -90,10 +90,13 @@ header {
          .hamburger-icon {
             transition: color 0.5s;
             height: inherit;
-            margin-right: 25px;
+            margin-right: 5px;
          }
       }
       #works-link {
+         & + #works-label {
+            translate: 0 -4px;
+         }
          &.active {
             & + #works-label {
                transition: color 0.5s;
@@ -389,6 +392,7 @@ main {
                }
                &:not(.active):hover {
                   cursor: zoom-in;
+                  filter: brightness(120%);
                }
             }
             &:has(img.active):before {
@@ -473,7 +477,7 @@ main {
          }
          & .github-pages-combo-icon {
             width: 60px;
-            translate: 0 6px 0;
+            translate: 0 4px 0;
          }
          & .bsu-icon {
             width: 180px !important;
@@ -542,6 +546,7 @@ main {
       background-size: cover;
       background-repeat: repeat;
       & > div {
+         //width: 380px;
          background: #5d5d5d;
          border-radius: 12px;
          box-shadow: 5px 5px 15px, #494949 0 0 80px inset;
@@ -575,6 +580,7 @@ main {
       li {
          &:not(:last-child) {
             margin-bottom: 8px;
+            //border-bottom: 1px solid #535353;
          }
          display: grid;
          grid-template-columns: [logo]70px [lang]auto;
@@ -585,6 +591,7 @@ main {
          }
          > :nth-child(2) {
             justify-self: left;
+            white-space: pre;
          }
          &.indent {
             margin-left: 70px;
@@ -618,6 +625,7 @@ main {
       #resume-iframe {
          width: 845px;
          height: 1164px;
+         min-height: 1164px;
          border: none;
       }
       #download-link {
@@ -683,6 +691,12 @@ main {
          width: calc(var(--doc-width) - 2*$mainPad);
          top: $mainPad;
          font-size: 40px;
+      }
+      img:hover {
+         cursor: grab;
+      }
+      &:active, img:active {
+         cursor: grabbing;
       }
    }
    @keyframes slide-down {
@@ -968,6 +982,7 @@ footer {
    }
    &:not(.active):hover {
       cursor: zoom-in;
+      scale: 150%;
    }
 }
 .blender-icon {
