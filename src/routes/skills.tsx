@@ -70,7 +70,8 @@ import {
    VirtualBoxIcon,
    VSCodeIcon,
    WebpackIcon,
-   WiresharkIcon
+   WiresharkIcon,
+   XilinxIcon
 } from '../icons';
 
 
@@ -81,7 +82,7 @@ export default function Skills() {
          <h3>Primary</h3>
          <ul>
             <li><JavaIcon/><span>Java</span></li>
-            <li><div><JSIcon/><TypeScriptIcon/><SassIcon/><HTMLIcon/></div><span>{
+            <li><div id="web-lang-icons"><JSIcon/><TypeScriptIcon/><SassIcon/><HTMLIcon/></div><span id="web-langs">{
                `JavaScript/TypeScript,
                CSS/Sass, HTML`
                .replace(/ {15}/g,"")
@@ -158,6 +159,7 @@ export default function Skills() {
             <li><GitIcon/><span>Git</span></li>
             <li><VirtualBoxIcon/><span>VirtualBox</span></li>
             <li><WiresharkIcon/><span>WireShark</span></li>
+            <li><XilinxIcon/><span>Xilinx Vivado</span></li>
          </ul>
       </div>
 
@@ -198,7 +200,7 @@ export default function Skills() {
             <li><PHPStormIcon/><span>PHPStorm</span></li>
             <li><CLionIcon/><span>CLion</span></li>
             <li><DataGripIcon/><span>DataGrip</span></li>
-            <li><span><img src="https://www.jetbrains.com/_assets/www/fleet/inc/overview-content/img/fleet-logo.65f4a04c59fc3ba93bb5e181050891c5.png" width={30}/></span><span>Fleet</span></li>
+            <li><span><img src="https://www.jetbrains.com/_assets/www/fleet/inc/overview-content/img/fleet-logo.65f4a04c59fc3ba93bb5e181050891c5.png" width={34}/></span><span>Fleet</span></li>
             <li><VSCodeIcon/><span>VSCode</span></li>
          </ul>
       </div>

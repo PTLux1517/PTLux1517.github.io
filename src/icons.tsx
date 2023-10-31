@@ -849,7 +849,7 @@ export const CargoIcon = () => <Icon name="Cargo" className="icon lang-icon carg
    />
 </Icon>;
 
-export const CentOSIcon = () => <Icon name="CentOS" className="icon lang-icon centos-icon" viewBox="0 0 256 256">
+export const CentOSIcon = () => <Icon name="CentOS" className="icon lang-icon os-icon centos-icon" viewBox="0 0 256 256">
    <title>CentOS</title>
    <path
       fill="#932279"
@@ -920,7 +920,7 @@ export const ClinkbaitIcon = () => <Icon className="icon clinkbait-icon" viewBox
    0.035-0.135-0.043-0.273-0.175-0.309zm.863-7.425l-1.576,1.848-1.591-1.848h3.167zm-5.202,0h1.402l1.909,2.218-.71,.832-2.601-3.05z"/>
 </Icon>;
 
-export const CLionIcon = () => <Icon name="CLion" className="icon lang-icon clion-icon" viewBox="0 0 256 256">
+export const CLionIcon = () => <Icon name="CLion" className="icon lang-icon ide-icon clion-icon" viewBox="0 0 256 256">
    <title>CLion</title>
    <defs>
       <linearGradient id="clion__a" x1=".242%" x2="115.269%" y1="50%" y2="50%">
@@ -958,7 +958,7 @@ export const CLionIcon = () => <Icon name="CLion" className="icon lang-icon clio
    />
 </Icon>;
 
-export const DataGripIcon = () => <Icon name="DataGrip" className="icon lang-icon datagrip-icon" viewBox="0 0 70 70">
+export const DataGripIcon = () => <Icon name="DataGrip" className="icon lang-icon ide-icon datagrip-icon" viewBox="0 0 70 70">
    <title>DataGrip</title>
    <path fill="#9775F8" d="M65.5 10.9 70 39.5l-17 9.9-3.2-16.2z" />
    <linearGradient
@@ -1100,6 +1100,10 @@ export const DockerIcon = () => <Icon name="Docker" className="icon lang-icon do
 	 M186.4,100.2h-45.3v41.7h45.3V100.2z M240,100.2h-45.3v41.7H240V100.2z M293.6,100.2h-45.3v41.7h45.3V100.2z"/>
 </Icon>;
 
+export const ExternalLinkIcon = () => <Icon className="icon external-link-icon" fill="none">
+   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6H7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-5m-6 0 7.5-7.5M15 3h6v6"/>
+</Icon>;
+
 export const GitIcon = () => <Icon name="Git" className="icon lang-icon git-icon" viewBox="0 0 92 92">
    <title>Git</title>
    <defs>
@@ -1238,7 +1242,7 @@ export const HTMLIcon = () => <Icon name="HTML5" className="icon lang-icon html-
    <path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/>
 </Icon>;
 
-export const IntelliJIcon = () => <Icon name="IntelliJ IDEA" className="icon lang-icon intellij-icon" viewBox="0 0 70 70">
+export const IntelliJIcon = () => <Icon name="IntelliJ IDEA" className="icon lang-icon ide-icon intellij-icon" viewBox="0 0 70 70">
    <title>IntelliJ</title>
    <linearGradient
       id="intellij__a"
@@ -1749,7 +1753,7 @@ export const JUnitIcon = () => <Icon name="JUnit" className="icon lang-icon juni
    z"/>
 </Icon>;
 
-export const KubuntuIcon = () => <Icon name="Kubuntu" className="icon lang-icon kubuntu-icon" viewBox="0 0 600 600">
+export const KubuntuIcon = () => <Icon name="Kubuntu" className="icon lang-icon os-icon kubuntu-icon" viewBox="0 0 600 600">
    <title>Kubuntu</title>
    <path
       d="M872.24 55.171c0 24.644-19.98 44.625-44.625 44.625s-44.623-19.98-44.623-44.625c0-24.644 19.978-44.622 44.623-44.622 24.646 0 44.625 19.978 44.625 44.622z"
@@ -2070,7 +2074,7 @@ export const PHPIcon = () => <Icon name="PHP" className="icon lang-icon php-icon
    </g>
 </Icon>;
 
-export const PHPStormIcon = () => <Icon name="PHPStorm" className="icon lang-icon phpstorm-icon" viewBox="0 0 70 70">
+export const PHPStormIcon = () => <Icon name="PHPStorm" className="icon lang-icon ide-icon phpstorm-icon" viewBox="0 0 70 70">
    <title>PHPStorm</title>
    <linearGradient id="phpstorm__a" x1={0.558} x2={29.947} y1={46.846} y2={8.026} gradientUnits="userSpaceOnUse">
       <stop
@@ -2550,7 +2554,7 @@ export const PicoCLIIcon = () => <Icon name="PicoCLI" className="icon lang-icon 
    />
 </Icon>;
 
-export const PopOSIcon = () => <Icon name="Pop!_OS" className="icon lang-icon pop-os-icon" viewBox="0 0 200 200">
+export const PopOSIcon = () => <Icon name="Pop!_OS" className="icon lang-icon os-icon pop-os-icon" viewBox="0 0 200 200">
    <title>Pop!_OS</title>
    <style>{".pop__st1{fill:#fff}"}</style>
    <g id="pop__g18" transform="matrix(.21142 0 0 .21142 5 4.789)">
@@ -3314,7 +3318,7 @@ export const ReactRouterIcon = () => <Icon name="React Router" className="icon l
    <path fill="#121212" d="M83.7137 60.9998C78.2339 61.0304 73.7361 56.5901 73.7052 51.122C73.6747 45.632 78.1068 41.1258 83.5646 41.0949C89.0444 41.0643 93.5423 45.5046 93.5731 50.9727C93.6036 56.4583 89.1716 60.9689 83.7137 60.9998Z"/>
 </Icon>;
 
-export const RedHatIcon = () => <Icon name="Red Hat" className="icon lang-icon redhat-icon" viewBox="0 0 192.3 146">
+export const RedHatIcon = () => <Icon name="Red Hat" className="icon lang-icon os-icon redhat-icon" viewBox="0 0 192.3 146">
    <title>Red Hat</title>
    <path
       d="M128 84c12.5 0 30.6-2.6 30.6-17.5a19.53 19.53 0 0 0-.3-3.4l-7.4-32.4c-1.7-7.1-3.2-10.4-15.7-16.6C125.5 9.1 104.4 1 98.1 1c-5.9 0-7.6 7.5-14.5 7.5-6.7 0-11.6-5.6-17.9-5.6-6 0-9.9 4.1-12.9 12.5 0 0-8.4 23.7-9.5 27.2a6.15 6.15 0 0 0-.2 1.9C43 53.7 79.3 83.9 128 84m32.5-11.4c1.7 8.2 1.7 9.1 1.7 10.1 0 14-15.7 21.8-36.4 21.8-46.8 0-87.7-27.4-87.7-45.5a18.35 18.35 0 0 1 1.5-7.3C22.8 52.5 1 55.5 1 74.7 1 106.2 75.6 145 134.6 145c45.3 0 56.7-20.5 56.7-36.7 0-12.7-11-27.1-30.8-35.7"
@@ -4396,7 +4400,7 @@ export const TypeScriptIcon = () => <Icon name="TypeScript" className="icon lang
    <path clipRule="evenodd" d="m316.939 407.424v50.061c8.138 4.172 17.763 7.3 28.875 9.386s22.823 3.129 35.135 3.129c11.999 0 23.397-1.147 34.196-3.442 10.799-2.294 20.268-6.075 28.406-11.342 8.138-5.266 14.581-12.15 19.328-20.65s7.121-19.007 7.121-31.522c0-9.074-1.356-17.026-4.069-23.857s-6.625-12.906-11.738-18.225c-5.112-5.319-11.242-10.091-18.389-14.315s-15.207-8.213-24.18-11.967c-6.573-2.712-12.468-5.345-17.685-7.9-5.217-2.556-9.651-5.163-13.303-7.822-3.652-2.66-6.469-5.476-8.451-8.448-1.982-2.973-2.974-6.336-2.974-10.091 0-3.441.887-6.544 2.661-9.308s4.278-5.136 7.512-7.118c3.235-1.981 7.199-3.52 11.894-4.615 4.696-1.095 9.912-1.642 15.651-1.642 4.173 0 8.581.313 13.224.938 4.643.626 9.312 1.591 14.008 2.894 4.695 1.304 9.259 2.947 13.694 4.928 4.434 1.982 8.529 4.276 12.285 6.884v-46.776c-7.616-2.92-15.937-5.084-24.962-6.492s-19.381-2.112-31.066-2.112c-11.895 0-23.163 1.278-33.805 3.833s-20.006 6.544-28.093 11.967c-8.086 5.424-14.476 12.333-19.171 20.729-4.695 8.395-7.043 18.433-7.043 30.114 0 14.914 4.304 27.638 12.912 38.172 8.607 10.533 21.675 19.45 39.204 26.751 6.886 2.816 13.303 5.579 19.25 8.291s11.086 5.528 15.415 8.448c4.33 2.92 7.747 6.101 10.252 9.543 2.504 3.441 3.756 7.352 3.756 11.733 0 3.233-.783 6.231-2.348 8.995s-3.939 5.162-7.121 7.196-7.147 3.624-11.894 4.771c-4.748 1.148-10.303 1.721-16.668 1.721-10.851 0-21.597-1.903-32.24-5.71-10.642-3.806-20.502-9.516-29.579-17.13zm-84.159-123.342h64.22v-41.082h-179v41.082h63.906v182.918h50.874z" fill="#fff" fillRule="evenodd"/>
 </Icon>;
 
-export const UbuntuIcon = () => <Icon name="Ubuntu" className="icon lang-icon ubuntu-icon" viewBox="0 0 100 100">
+export const UbuntuIcon = () => <Icon name="Ubuntu" className="icon lang-icon os-icon ubuntu-icon" viewBox="0 0 100 100">
    <title>Ubuntu</title>
    <circle cx={50} cy={50} r={45} fill="#f47421" />
    <circle cx={50} cy={50} r={21.825} fill="none" stroke="#fff" strokeWidth={8.55} />
@@ -4455,7 +4459,7 @@ export const VirtualBoxIcon = () => <Icon name="VirtualBox" className="icon lang
    <path fill="#193861" d="M0,0v512h511.3082886V0H0z M471.1773376,40.1309395v252.6877594h-58.5138245L338.2658081,69.6661148l-54.0709534,147.9116516L233.2741547,70.41465l-65.7006989,239.9587402l-41.128334-131.311264H40.1309395V40.1309395H471.1773376z M40.1309395,471.8690491V219.1930542h56.8299599l73.1978226,233.7000122l67.5844421-246.8366241l45.4144592,131.2459564l53.3655396-145.9815369l47.217865,141.6287842h87.4363098v138.9194031H40.1309395z"/>
 </Icon>;
 
-export const VSCodeIcon = () => <Icon name="VS Code" className="icon lang-icon vscode-icon" viewBox="0 0 100 100">
+export const VSCodeIcon = () => <Icon name="VS Code" className="icon lang-icon ide-icon vscode-icon" viewBox="0 0 100 100">
    <title>VS Code</title>
    <mask id="vscode__a" width={100} height={100} x={0} y={0} mask-type="alpha" maskUnits="userSpaceOnUse">
       <path

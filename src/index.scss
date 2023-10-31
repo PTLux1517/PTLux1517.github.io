@@ -448,6 +448,11 @@ main {
          &:hover, &:focus {
             text-decoration: underline;
             outline: none;
+            svg {
+               color: #0070E0 !important;
+               //translate: 2px -2px;
+               //transform: scale(130%);
+            }
          }
       }
       .course {
@@ -596,13 +601,14 @@ main {
          &.indent {
             margin-left: 70px;
          }
-         > div {
+         #web-lang-icons, #web-langs {
+            background: hsla(0,0%,0%,0.08);
+            border-radius: 7px;
+            padding: 0 2px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            background: hsla(0,0%,0%,0.08);
-            border-radius: 7px;
          }
       }
       .unreal-icon {
@@ -763,11 +769,13 @@ footer {
       margin: 0 10px;
    }
    &.awk-icon {
-      transform: scale(120%) translateY(5px);
+      scale: 120%;
+      translate: 0 5px;
       color: black;
    }
    &.aws-icon {
-      margin: 0 8px;
+      scale: 130%;
+      margin: 0 10px;
    }
    &.aws-service-icon {
       border-radius: 3px;
@@ -784,7 +792,7 @@ footer {
       border-radius: 1px;
    }
    &.cargo-icon {
-      scale: 140%;
+      scale: 150%;
       translate: 0 3px;
    }
    &.c-icon {
@@ -793,22 +801,25 @@ footer {
       margin: 0 2px;
    }
    &.docker-icon {
-      scale: 125%;
+      scale: 145%;
       margin: 0 5px 0 10px;
    }
    &.git-icon {
-      scale: 110%;
-      translate: 0 1px;
+      scale: 120%;
+      translate: 0 2px;
    }
    &.github-actions-icon {
+      scale: 130%;
+      margin: 0 4px;
       translate: 0 2px;
    }
    &.go-icon {
-      transform: scale(200%) translateY(-1px);
+      scale: 200%;
+      translate: -3px -4px;
       margin: 0 18px;
    }
    &.gradle-icon {
-      scale: 140%;
+      scale: 150%;
       translate: 0 -2px;
    }
    &.guava-icon {
@@ -816,40 +827,50 @@ footer {
       translate: 0 2px;
    }
    &.haskell-icon {
-      scale: 130%;
-      //background: hsla(0,0%,100%,0.15);
-      //border-radius: 2px;
+      scale: 140%;
+      translate: 0 -1px;
+      background: hsla(0,0%,100%,0.15);
+      border-radius: 2px;
    }
    &.html-icon {
       margin: 0 4px;
    }
+   &.ide-icon {
+      scale: 120%;
+   }
    &.java-icon {
-      transform: scale(120%) translateY(1px);
+      scale: 140%;
+      translate: 0 -3px;
+      margin: 0 3px;
    }
    &.javafx-icon {
-      scale: 120%;
+      scale: 125%;
+      translate: 0 -1px;
       margin: 0 3px;
    }
    &.jest-icon {
+      scale: 120%;
       translate: 0 3px;
       margin: 0 5px;
    }
    &.jquery-icon {
       scale: 125%;
-      translate: 0 2px;
+      translate: 1px 2px;
    }
    &.js-icon {
-      transform: translateY(5px);
-      margin: 0 5px;
+      translate: 0 3px;
+      margin: 0 3px;
+      border-radius: 2.5px;
    }
    &.junit-icon {
+      scale: 110%;
       translate: 0 2px;
    }
    &.linux-icon {
       scale: 110%;
    }
    &.make-icon {
-      scale: 110%;
+      scale: 120%;
       translate: 0 3px;
    }
    &.mysql-icon {
@@ -863,22 +884,26 @@ footer {
    &.npm-icon {
       scale: 160%;
    }
+   &.os-icon {
+      scale: 120%;
+   }
    &.php-icon {
-      transform: scale(180%) translateY(1px);
-      margin: 0 10px;
+      scale: 180%;
+      translate: 0 -2px;
+      margin: 0 12px;
    }
    &.picocli-icon {
       scale: 180%;
-      translate: -10px -3px;
-      margin: 0 2px 0 21px;
+      translate: -12px -3px;
+      margin: 0 0 0 23px;
    }
    &.prolog-icon {
-      scale: 145%;
+      scale: 140%;
       translate: 0 1px;
       margin: 0 6px;
    }
    &.python-icon {
-      scale: 120%;
+      scale: 130%;
       translate: 0 3px;
    }
    &.r-icon {
@@ -886,11 +911,13 @@ footer {
       translate: 2px 0;
    }
    &.react-icon {
+      scale: 120%;
       translate: 0 3px;
       margin: 0 6px;
    }
    &.react-router-icon {
-      scale: 140%;
+      scale: 135%;
+      translate: 0 -2px;
    }
    &.rust-icon {
       scale: 120%;
@@ -908,6 +935,7 @@ footer {
    }
    &.scala-icon {
       color: red;
+      scale: 110%;
       translate: 0 3px;
    }
    &.scheme-icon {
@@ -916,32 +944,35 @@ footer {
       margin: 0 4px;
    }
    &.smalltalk-icon {
-      transform: scale(140%) translateY(2px);
+      scale: 130%;
       margin: 0 6px;
    }
    &.terraform-icon {
+      scale: 110%;
       translate: 0 4px;
    }
    &.threejs-icon {
       background: #FAFAFA99;
       border-radius: 3px;
+      scale: 110%;
       translate: 0 3px;
-      margin: 0 1px;
+      margin: 0 3px;
    }
    &.typescript-icon {
       translate: 0 3px;
-      margin: 0 1px;
+      margin: 0 3px;
    }
    &.vagrant-icon {
+      scale: 110%;
       translate: 0 2px;
    }
    &.verilog-icon {
-      scale: 150%;
-      translate: 0 4px;
+      scale: 165%;
+      translate: 0 3px;
       margin: 0 10px;
    }
    &.virtualbox-icon {
-      scale: 105%;
+      scale: 108%;
       translate: 0 3px;
    }
    &.wireshark-icon {
@@ -949,8 +980,9 @@ footer {
       translate: 0 3px;
    }
    &.xilinx-icon {
-      transform: scale(250%) translateY(-1px);
-      margin: 0 22px;
+      scale: 250%;
+      translate: 0 -5px;
+      margin: 0 24px;
       padding: 2px;
       border-radius: 2px;
       background: hsla(0, 0%, 0%, 0.85);
@@ -960,7 +992,7 @@ footer {
       z-index: 1;
       top: calc(var(--doc-height) * 0.5);
       left: 50%;
-      transform: scale(calc(1600% * $mainZoom));
+      transform: scale(calc(1550% * $mainZoom));
       &.xilinx-icon {
          background: hsla(0, 0%, 0%, 0.85);
       }
@@ -982,7 +1014,7 @@ footer {
    }
    &:not(.active):hover {
       cursor: zoom-in;
-      scale: 150%;
+      transform: scale(150%);
    }
 }
 .blender-icon {
@@ -992,6 +1024,11 @@ footer {
 .unreal-icon {
    scale: 98%;
    translate: -3px 2px;
+}
+
+.external-link-icon {
+   color: gray !important;
+   width: 20px !important;
 }
 
 :has(.lang-icon.active):before {

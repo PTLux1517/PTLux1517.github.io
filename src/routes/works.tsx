@@ -16,6 +16,7 @@ import {
    CIcon,
    ClinkbaitIcon,
    DockerIcon,
+   ExternalLinkIcon,
    GitHubActionsIcon,
    GitHubPagesComboIcon,
    GoIcon,
@@ -52,7 +53,7 @@ export default function Works() {
       <div className="spacer"><span className="h2-bg"><h2>Projects</h2></span></div>
       <Collapsible
          buttonContent={<>
-            <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait</a> : A cocktail recipe app for the home bartender which doubles as a menu for guests
+            <ClinkbaitIcon/><a href="https://clinkbait.com">Clinkbait<ExternalLinkIcon/></a> : A cocktail recipe app for the home bartender which doubles as a menu for guests
          </>}
          innerContent={<>
             <div style={{minWidth: "100%"}}>
@@ -70,15 +71,15 @@ export default function Works() {
       <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">GitHub Pages</h2><GitHubPagesComboIcon/></span></div>
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.github.io/Movilo/">/Movilo</a> : A biomechanics motion capture visualization and analysis tool&emsp;(BSU senior design project)
+            <a href="https://ptlux1517.github.io/Movilo/">/Movilo<ExternalLinkIcon/></a> : A biomechanics motion capture visualization and analysis tool&emsp;(BSU senior design project)
          </>}
          innerContent={<>
             <div style={{minWidth: "50%"}}>
                <TypeScriptIcon/><ReactIcon/><ThreeJSIcon/><JestIcon/><GitHubActionsIcon/>
             </div>
             <div>
-               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup</a>{" | "}
-               <a href="https://github.com/cs481-ekh/f22-viz-kids">repo</a>
+               <a href="https://cs481-ekh.github.io/f22-viz-kids/"> writeup<ExternalLinkIcon/></a>{" | "}
+               <a href="https://github.com/cs481-ekh/f22-viz-kids">repo<ExternalLinkIcon/></a>
             </div>
             <img src="https://drive.google.com/uc?export=view&id=19m_-A74W_B1zWyDcxXbmMVJJLT0x8sFD" onClick={toggleActive} style={{minWidth: "50%"}}/>
             <img src="https://drive.google.com/uc?export=view&id=1kjyfqBLoUxYX303JKAFAjzyq7a005GD0" onClick={toggleActive}/>
@@ -88,14 +89,14 @@ export default function Works() {
       />
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.github.io/code-128a-barcode-encoder/">/code-128a-barcode-encoder</a> : A barcode data encoder for the Code 128 A character set
+            <a href="https://ptlux1517.github.io/code-128a-barcode-encoder/">/code-128a-barcode-encoder<ExternalLinkIcon/></a> : A barcode data encoder for the Code 128 A character set
          </>}
          innerContent={<>
             <div style={{minWidth: "80%"}}>
                <JSIcon/>
             </div>
             <div>
-               <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo</a>
+               <a href="https://github.com/PTLux1517/code-128a-barcode-encoder">repo<ExternalLinkIcon/></a>
             </div>
             <img src="https://drive.google.com/uc?export=view&id=1PtcxbyiL__HICoJHmExH07_cCWjkpfzp" onClick={toggleActive}/>
             <img src="https://drive.google.com/uc?export=view&id=1BLiDhfQIOJe1xFvyIoYm27519QIZNaoj" onClick={toggleActive} style={{minWidth: "54%"}}/>
@@ -103,10 +104,10 @@ export default function Works() {
       />
 
       <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">Games</h2><ItchIOIcon/><UnrealIcon/><BlenderIcon/></span></div>
-      <div><a href="https://ptlux1517.itch.io/">itch.io creator homepage</a></div><br/>
+      <div><a href="https://ptlux1517.itch.io/">itch.io creator homepage<ExternalLinkIcon/></a></div><br/>
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.itch.io/project-horizon">Project Horizon</a> : third-person mech combat
+            <a href="https://ptlux1517.itch.io/project-horizon">Project Horizon<ExternalLinkIcon/></a> : third-person mech combat
          </>}
          innerContent={<>
             <img src="https://img.itch.zone/aW1nLzYyNzc2MTgucG5n/original/gWI0R6.png" alt="Project Horizon game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
@@ -122,7 +123,7 @@ export default function Works() {
       />
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.itch.io/suns-out-guns-out">Sun's Out Guns Out!</a> : low-poly runner
+            <a href="https://ptlux1517.itch.io/suns-out-guns-out">Sun's Out Guns Out!<ExternalLinkIcon/></a> : low-poly runner
          </>}
          innerContent={<>
             <img src="https://img.itch.zone/aW1nLzY0MDgzMzgucG5n/original/4oJUDF.png" alt="Sun's Out Guns Out game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
@@ -138,7 +139,7 @@ export default function Works() {
       />
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.itch.io/icarus">Icarus</a> : dungeon/maze crawler with flight
+            <a href="https://ptlux1517.itch.io/icarus">Icarus<ExternalLinkIcon/></a> : dungeon/maze crawler with flight
          </>}
          innerContent={<>
             <img src="https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3OTY0LnBuZw==/original/BG7%2Bm8.png" alt="Icarus game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
@@ -154,7 +155,7 @@ export default function Works() {
       />
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.itch.io/portal-hunter">Portal Hunter</a> : dungeon crawler with puzzles
+            <a href="https://ptlux1517.itch.io/portal-hunter">Portal Hunter<ExternalLinkIcon/></a> : dungeon crawler with puzzles
          </>}
          innerContent={<>
             <img src="https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5Njg5LnBuZw==/original/2o0OYt.png" alt="Portal Hunter game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
@@ -169,7 +170,7 @@ export default function Works() {
       />
       <Collapsible
          buttonContent={<>
-            <a href="https://ptlux1517.itch.io/asteroid-escape">Asteroid Escape</a> : space flight survival
+            <a href="https://ptlux1517.itch.io/asteroid-escape">Asteroid Escape<ExternalLinkIcon/></a> : space flight survival
          </>}
          innerContent={<>
             <img src="https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxMzY0LnBuZw==/original/N8DyNS.png" alt="Asteroid Escape game theme" onClick={toggleActive} style={{minWidth: "50%"}}/>
@@ -181,15 +182,15 @@ export default function Works() {
       />
 
       <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">Leetcode</h2><LeetcodeIcon/></span></div>
-      <span className="text-icon-span"><ScalaIcon/><a href="https://github.com/PTLux1517/leetcode/tree/main/src/main/scala/com/github/ptlux1517/leetcode">Scala repo</a></span>
+      <span className="text-icon-span"><ScalaIcon/><a href="https://github.com/PTLux1517/leetcode/tree/main/src/main/scala/com/github/ptlux1517/leetcode">Scala repo<ExternalLinkIcon/></a></span>
 
       <hr/>
       <span className="text-icon-span"><h1>Private Works</h1><BSUIcon/></span>
 
       <div className="spacer"><span className="h2-bg"><h2>Large Class Projects</h2></span></div>
       <ul>
-         <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video</a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
-         <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video</a>) <JavaIcon/></li>
+         <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video<ExternalLinkIcon/></a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
+         <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
          <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/><JavaFXIcon/></li>
          <li><span className="course">[Programming Languages]</span> Interpreter <JavaIcon/></li>
          <li><span className="course">[Data Structures]</span> B-Tree Implementation (for use on disk)</li>
@@ -204,16 +205,20 @@ export default function Works() {
          <li><span className="course">[Operating Systems]</span> Page Fault Handler <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> Buddy System Memory Allocator <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> Lottery Scheduler <CIcon/></li>
-         <li><span className="course">[Software Engineering]</span> GitHub Bot <JSIcon/></li>
-         <li><span className="course">[Web Development]</span> Blogging Engine (<a href="https://drive.google.com/file/d/1BiPrF1FxNB2DEjuxYXh-nlAD04TJRm5K/view?usp=sharing">demo video</a>) <PHPIcon/><JSIcon/></li>
+         <li><span className="course">[Web Development]</span> Blogging Engine (<a href="https://drive.google.com/file/d/1BiPrF1FxNB2DEjuxYXh-nlAD04TJRm5K/view?usp=sharing">demo video<ExternalLinkIcon/></a>) <PHPIcon/><JSIcon/></li>
          <li><span className="course">[Theory of Computation]</span> Recursive Descent RegEx Parser <JavaIcon/></li>
          <li><span className="course">[Theory of Computation]</span> NFA to DFA Converter <JavaIcon/></li>
          <li><span className="course">[Algorithms]</span> Activity Node to Event Node Graph Converter with Critical Path Info <JavaIcon/></li>
          <li><span className="course">[Intro to Sys Programming]</span> Implementing the cat, grep, wc, sort, ps Commands <CIcon/></li>
+         <li><span className="course">[Software Engineering]</span> GitHub Bot <JSIcon/></li>
+         <li><span className="course">[Software Engineering]</span> Open source mod: added toggleable notebook lines to <a href="https://www.jedit.org/">jEdit<ExternalLinkIcon/></a> (<a href="https://drive.google.com/file/d/1IcczM9aLzmzkS_g4MNrW0IJp3jjvpiBH/view">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
+         <li className="continuation">(jEdit v5.6.0 consists of ~0.6K Java files and ~124 KLOC without comments)</li>
       </ul>
 
       <div className="spacer"><span className="h2-bg"><h2>Small Class Projects</h2></span></div>
       <ul>
+         <li><span className="course">[Software Engineering]</span> Open source mod: added name to <a href="https://github.com/mucommander/mucommander">muCommander<ExternalLinkIcon/></a> splash screen (<a href="https://drive.google.com/file/d/1Xf05jkvP2iEcu3V4H0urLEi5VIqkcvwy/view">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
+         <li className="continuation">(muCommander v0.9.7-1 consists of ~1.7K Java files and ~166 KLOC without comments)</li>
          <li><span className="course">[Algorithms]</span> 0-1 Knapsack DP Problem <JavaIcon/></li>
          <li><span className="course">[Algorithms]</span> Knight's Tour Problem <JavaIcon/></li>
          <li><span className="course">[Opeating Systems]</span> Character Replacement Device Driver <CIcon/></li>
@@ -230,8 +235,7 @@ export default function Works() {
 
       <div className="spacer"><span className="h2-bg"><h2>Hardware Class Projects</h2></span></div>
       <ul>
-         <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation</li>
-         <li className="continuation"> with 7-Segment Angle Display <CIcon/><ASMIcon/></li>
+         <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation with 7-Segment Angle Display <CIcon/><ASMIcon/></li>
          <li><span className="course">[Digital Systems]</span> Simon Game <XilinxIcon/><VerilogIcon/></li>
       </ul>
    </div></div></main>;
