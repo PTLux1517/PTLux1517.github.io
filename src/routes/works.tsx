@@ -20,6 +20,7 @@ import {
    GitHubActionsIcon,
    GitHubPagesComboIcon,
    GoIcon,
+   GroupProjectIcon,
    ItchIOIcon,
    JavaIcon,
    JavaFXIcon,
@@ -162,12 +163,12 @@ export default function Works() {
       blurb: <>A cocktail recipe app for the home bartender which doubles as a menu for guests</>,
       iconsDiv: <div><TypeScriptIcon/><ReactIcon/><JavaIcon/><MySQLIcon/><TerraformIcon/><AWSIcon/>(<AWSCloudFrontIcon/><AWSRoute53Icon/><AWSAPIGatewayIcon/><AWSLambdaIcon/><AWSS3Icon/><AWSAuroraIcon/>)</div>,
       images: [
-         {frWidth: 1/2, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1oa8I8mgsPOx2678lyPSNc7giqtDS9B0k"}},
-         {frWidth: 1/2, url: {small: "", large: "https://drive.google.com/uc?export=view&id=19IJGBciGtOo9bkfhwT2zs7YoFNlCxtj_"}},
-         {frWidth: 1/3, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1wpAF-Ht5i7TMyirU_ZD3QA1hud3bzdzb"}},
-         {frWidth: 1/3, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1qOtCk5Jg2_hqLakNRqISfKPXqBlCp2hA"}},
-         {frWidth: 1/3, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1DP77vlu0LsVIqcB8oHMGZUkFRSi57cal"}},
-         {frWidth: 1,   url: {small: "", large: "https://drive.google.com/uc?export=view&id=1pDajUFTQpc5jxtcw6RDzgdG6nQl4RWtx"}},
+         {frWidth: 1/2, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1gnK-z1AdkdI6srUh8mZolJpk7JXOLDOe"}},
+         {frWidth: 1/2, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1cxxBFs7wU2_W_jqrec60r3Enn_Qa7Opo"}},
+         {frWidth: 1/3, url: {small: "", large: "https://drive.google.com/uc?export=view&id=11zck80LwXeIbMTp0KjG9FXDCdxTthw7_"}},
+         {frWidth: 1/3, url: {small: "", large: "https://drive.google.com/uc?export=view&id=16ZV9XIUVh2r1kIWZa1f9umQpQaMs4Uo5"}},
+         {frWidth: 1/3, url: {small: "", large: "https://drive.google.com/uc?export=view&id=1EUjgHQ-Q3PE03gaCRi7Iw_58H9pjcViI"}},
+         {frWidth: 1,   url: {small: "", large: "https://drive.google.com/uc?export=view&id=1sBrg1vEi3sPibxlh5eapbEFVJXgnipPo"}},
       ]
    };
 
@@ -175,7 +176,7 @@ export default function Works() {
       name: "Movilo",
       mainLink: "https://ptlux1517.github.io/Movilo/",
       gitHubPage: true,
-      blurb: <>A biomechanics motion capture visualization and analysis tool&emsp;(BSU senior design project)</>,
+      blurb: <>A biomechanics motion capture visualization and analysis tool&emsp;(BSU senior design project <GroupProjectIcon otherMemberCount={4}/>)</>,
       iconsDiv: <div><TypeScriptIcon/><ReactIcon/><ThreeJSIcon/><JestIcon/><GitHubActionsIcon/></div>,
       otherLinks: [
          {linkText: "writeup", url: "https://cs481-ekh.github.io/f22-viz-kids/"},
@@ -325,12 +326,12 @@ export default function Works() {
          Large Class Projects
       </h2></span></div>
       <ul>
-         <li><span className="course">[Distributed Systems]</span> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video<ExternalLinkIcon/></a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
-         <li><span className="course">[Distributed Systems]</span> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
+         <li><span className="course">[Distributed Systems]</span> <GroupProjectIcon otherMemberCount={1}/> Distributed UUID Service (<a href="https://drive.google.com/file/d/11BraIymZ1J05fdrn4NM6JouudOxm--yY/view?t=3m2s">demo video<ExternalLinkIcon/></a>) <JavaIcon/><PicoCLIIcon/><DockerIcon/><AWSEC2Icon></AWSEC2Icon></li>
+         <li><span className="course">[Distributed Systems]</span> <GroupProjectIcon otherMemberCount={1}/> Chat Server (<a href="https://drive.google.com/file/d/1I2BlwTOQ5t-fSL1uic-K6A6eUhBS0agJ/view?usp=sharing">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
          <li><span className="course">[Databases]</span> Treasure Valley Library Management System <JavaIcon/><MySQLIcon/><JavaFXIcon/></li>
          <li><span className="course">[Programming Languages]</span> Interpreter <JavaIcon/></li>
-         <li><span className="course">[Data Structures]</span> B-Tree Implementation (for use on disk)</li>
-         <li className="continuation"> and Human Genome Length-k DNA Subsequence Frequency Analyzer <JavaIcon/></li>
+         <li><span className="course">[Data Structures]</span> <GroupProjectIcon otherMemberCount={2}/> B-Tree Implementation <span className="faint">(for use on disk)</span> <JavaIcon/></li>
+         <li className="continuation faint"> and Human Genome Length-k DNA Subsequence Frequency Analyzer</li>
       </ul>
 
       <div className="spacer"><span className="h2-bg"><h2>
@@ -339,18 +340,18 @@ export default function Works() {
       <ul>
          <li><span className="course">[Operating Systems]</span> Keyboard Device Driver <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> User-Level Thread Library <CIcon/></li>
-         <li><span className="course">[Operating Systems]</span> Multi-Threaded Web Server (bounded buffer problem) <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Multi-Threaded Web Server <span className="faint">(bounded buffer problem)</span> <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> Page Fault Handler <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> Buddy System Memory Allocator <CIcon/></li>
          <li><span className="course">[Operating Systems]</span> Lottery Scheduler <CIcon/></li>
-         <li><span className="course">[Web Development]</span> Blogging Engine (<a href="https://drive.google.com/file/d/1BiPrF1FxNB2DEjuxYXh-nlAD04TJRm5K/view?usp=sharing">demo video<ExternalLinkIcon/></a>) <PHPIcon/><JSIcon/></li>
+         <li><span className="course">[Intro to Systems Programming]</span> Implementation of the cat, grep, wc, sort, and ps Commands <CIcon/></li>
          <li><span className="course">[Theory of Computation]</span> Recursive Descent RegEx Parser <JavaIcon/></li>
          <li><span className="course">[Theory of Computation]</span> NFA to DFA Converter <JavaIcon/></li>
          <li><span className="course">[Algorithms]</span> Activity Node to Event Node Graph Converter with Critical Path Info <JavaIcon/></li>
-         <li><span className="course">[Intro to Sys Programming]</span> Implementing the cat, grep, wc, sort, ps Commands <CIcon/></li>
-         <li><span className="course">[Software Engineering]</span> GitHub Bot <JSIcon/></li>
-         <li><span className="course">[Software Engineering]</span> Open source mod: added toggleable notebook lines to <a href="https://www.jedit.org/">jEdit<ExternalLinkIcon/></a> (<a href="https://drive.google.com/file/d/1IcczM9aLzmzkS_g4MNrW0IJp3jjvpiBH/view">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
-         <li className="continuation">(jEdit v5.6.0 consists of ~0.6K Java files and ~124 KLOC without comments)</li>
+         <li><span className="course">[Web Development]</span> Blogging Engine (<a href="https://drive.google.com/file/d/1BiPrF1FxNB2DEjuxYXh-nlAD04TJRm5K/view?usp=sharing">demo video<ExternalLinkIcon/></a>) <PHPIcon/><JSIcon/></li>
+         <li><span className="course">[Software Engineering]</span> <GroupProjectIcon otherMemberCount={3}/> GitHub Bot <JSIcon/></li>
+         <li><span className="course">[Software Engineering]</span> Open source mod: added toggleable notebook lines to <a href="https://www.jedit.org/">jEdit<ExternalLinkIcon/></a> text editor (<a href="https://drive.google.com/file/d/1IcczM9aLzmzkS_g4MNrW0IJp3jjvpiBH/view">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
+         <li className="continuation faint">(jEdit v5.6.0 consists of ~0.6K Java files and ~124 KLOC without comments)</li>
       </ul>
 
       <div className="spacer"><span className="h2-bg"><h2>
@@ -358,24 +359,24 @@ export default function Works() {
       </h2></span></div>
       <ul>
          <li><span className="course">[Software Engineering]</span> Open source mod: added name to <a href="https://github.com/mucommander/mucommander">muCommander<ExternalLinkIcon/></a> splash screen (<a href="https://drive.google.com/file/d/1Xf05jkvP2iEcu3V4H0urLEi5VIqkcvwy/view">demo video<ExternalLinkIcon/></a>) <JavaIcon/></li>
-         <li className="continuation">(muCommander v0.9.7-1 consists of ~1.7K Java files and ~166 KLOC without comments)</li>
+         <li className="continuation faint">(muCommander v0.9.7-1 consists of ~1.7K Java files and ~166 KLOC without comments)</li>
+         <li><span className="course">[Operating Systems]</span> Character Replacement Device Driver <CIcon/></li>
+         <li><span className="course">[Operating Systems]</span> Parallel Merge Sort <CIcon/></li>
          <li><span className="course">[Algorithms]</span> 0-1 Knapsack DP Problem <JavaIcon/></li>
          <li><span className="course">[Algorithms]</span> Knight's Tour Problem <JavaIcon/></li>
-         <li><span className="course">[Operating Systems]</span> Character Replacement Device Driver <CIcon/></li>
-         <li><span className="course">[Operating Systems]</span> Parallel Mergesort <CIcon/></li>
          <li><span className="course">[Theory of Computation]</span> DFA <JavaIcon/></li>
          <li><span className="course">[Programming Languages]</span> .xlsx to .html Converter <AWKIcon/></li>
          <li><span className="course">[Programming Languages]</span> Meeting Participant Availability Tool <PrologIcon/></li>
          <li><span className="course">[Programming Languages]</span> Tree Search and Replace <SchemeIcon/></li>
          <li><span className="course">[Programming Languages]</span> Simple Banking System <SmalltalkIcon/><GoIcon/></li>
          <li><span className="course">[Programming Languages]</span> Cache <RustIcon/></li>
-         <li><span className="course">[Data Structures]</span> HashTable Implementation <JavaIcon/></li>
+         <li><span className="course">[Data Structures]</span> Hash Table Implementation <JavaIcon/></li>
          <li><span className="course">[Data Structures]</span> Round Robin Scheduler with Max Heap <JavaIcon/></li>
       </ul>
 
       <div className="spacer"><span className="h2-bg"><h2>Hardware Class Projects</h2></span></div>
       <ul>
-         <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation using Pulse Width Modulation with 7-Segment Angle Display <CIcon/><ASMIcon/></li>
+         <li><span className="course">[Microprocessors]</span> Robotic Arm Actuation Using Pulse Width Modulation with 7-Segment Angle Display <CIcon/><ASMIcon/></li>
          <li><span className="course">[Digital Systems]</span> Simon Game <XilinxIcon/><VerilogIcon/></li>
       </ul>
    </div></div></main>;

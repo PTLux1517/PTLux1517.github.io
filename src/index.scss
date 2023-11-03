@@ -352,7 +352,7 @@ main {
             margin-right: 10px;
          }
          &:hover, &.active {
-            background: #545454;
+            background: hsl(0, 0%, 31%);
          }
          &:focus-visible:before {
             content: ">";
@@ -422,6 +422,7 @@ main {
                         max-width: 100%;
                         height: auto;
                         max-height: 100%;
+                        border-radius: 15px;
                      }
                      &:hover {
                         cursor: zoom-out;
@@ -569,6 +570,9 @@ main {
          &.continuation {
             list-style-type: none;
          }
+      }
+      .faint {
+         color: hsl(0, 0%, 29%);
       }
    }
    &[id="about"] {
@@ -861,6 +865,12 @@ footer {
       scale: 150%;
       translate: 0 -2px;
    }
+   &.group-project-icon {
+      color: $yellow;
+      scale: 112%;
+      translate: 0 4px;
+      margin: 0 6px 0 2px;
+   }
    &.guava-icon {
       scale: 110%;
       translate: 0 2px;
@@ -1038,6 +1048,7 @@ footer {
       & + .subtext {
          position: fixed;
          text-align: center;
+         white-space: pre-line;
          top: calc(0.5*var(--doc-height) + $mainZoom*270px) !important;
          left: calc(50% - 385px);
          width: 800px;
