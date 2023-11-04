@@ -430,9 +430,9 @@ main {
                   }
                }
                @keyframes pulse {
-                  0% {opacity: 0.1}
-                  50% {opacity: 0.05}
-                  100% {opacity: 0.1}
+                  0% {opacity: 0.6}
+                  50% {opacity: 0.3}
+                  100% {opacity: 0.6}
                }
             }
             &:has(.blurred-img.active img.loaded):before {
