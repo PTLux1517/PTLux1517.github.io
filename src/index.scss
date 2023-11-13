@@ -587,6 +587,7 @@ main {
       //align-items: center;
       align-content: safe center;
       gap: 15px;
+      background-color: hsl(0,0%,22%);
       background-image:
             radial-gradient(circle, hsla(0, 0%, 100%, 0.21) 58%, hsla(0, 0%, 100%, 0.27)),
             linear-gradient(135deg, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.1)),

@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const toggleActive:React.MouseEventHandler = event => {
-   if (!event.currentTarget.classList.contains("hamburger-icon")) {
+   if (event.currentTarget.classList.contains("group-project-icon")) {
       event.preventDefault();
       event.stopPropagation();
    }

@@ -19,18 +19,19 @@ import Transcript from './routes/transcript';
 import './index.scss';
 
 
-ReactDOM.createRoot(document.body.appendChild(Object.assign(document.createElement("div"), {id: "root"}))).render(
-   <React.StrictMode>
-      <RouterProvider router={createHashRouter(createRoutesFromElements(
-         <Route path="/" element={<Root/>}>
-            <Route index element={<Home/>}/>
-            <Route path="works" element={<Works/>}/>
-            <Route path="about" element={<About/>}/>
-            <Route path="skills" element={<Skills/>}/>
-            <Route path="resume" element={<Resume/>}/>
-            <Route path="transcript" element={<Transcript/>}/>
-            <Route path="*" element={<Navigate replace to="/"/>}/>
-         </Route>
-      ))}/>
-   </React.StrictMode>
-);
+ReactDOM.createRoot(document.body.appendChild(Object.assign(document.createElement("div"), {id: "root"})))
+   .render(
+      <React.StrictMode>
+         <RouterProvider router={createHashRouter(createRoutesFromElements(
+            <Route path="/" element={<Root/>}>
+               <Route index element={<Home/>}/>
+               <Route path="works" element={<Works/>}/>
+               <Route path="about" element={<About/>}/>
+               <Route path="skills" element={<Skills/>}/>
+               <Route path="resume" element={<Resume/>}/>
+               <Route path="transcript" element={<Transcript/>}/>
+               <Route path="*" element={<Navigate replace to="/"/>}/>
+            </Route>
+         ))}/>
+      </React.StrictMode>
+   );
