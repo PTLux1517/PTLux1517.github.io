@@ -149,12 +149,12 @@ export default function Works() {
       blurb: <>A cocktail recipe app for the home bartender which doubles as a menu for guests</>,
       iconsDiv: <div><TypeScriptIcon/><ReactIcon/><JavaIcon/><MySQLIcon/><TerraformIcon/><AWSIcon/>(<AWSCloudFrontIcon/><AWSRoute53Icon/><AWSAPIGatewayIcon/><AWSLambdaIcon/><AWSS3Icon/><AWSAuroraIcon/>)</div>,
       images: [
-         {pgWidth: 1/2, w: 2141, h: 3193, url: {small: "https://drive.google.com/uc?export=view&id=11k7y4ZLjou6D4s5vKYvWy2TpwHcF9JUT", large: "https://drive.google.com/uc?export=view&id=1gnK-z1AdkdI6srUh8mZolJpk7JXOLDOe"}},
-         {pgWidth: 1/2, w: 2134, h: 3193, url: {small: "https://drive.google.com/uc?export=view&id=1GPuhAXzsIBef7jiOLhSBcY54c7xMQ5Nw", large: "https://drive.google.com/uc?export=view&id=1cxxBFs7wU2_W_jqrec60r3Enn_Qa7Opo"}},
-         {pgWidth: 1/3, w: 640 , h: 604 , url: {small: "https://drive.google.com/uc?export=view&id=1E-SOdWAjDAhvQ9EbLNl5v-INRizqo9OR", large: "https://drive.google.com/uc?export=view&id=11zck80LwXeIbMTp0KjG9FXDCdxTthw7_"}},
-         {pgWidth: 1/3, w: 2141, h: 2259, url: {small: "https://drive.google.com/uc?export=view&id=1Hfxk3ymr_IZBzFXMSNlj7qP7D5g0NyLV", large: "https://drive.google.com/uc?export=view&id=16ZV9XIUVh2r1kIWZa1f9umQpQaMs4Uo5"}},
-         {pgWidth: 1/3, w: 2141, h: 1825, url: {small: "https://drive.google.com/uc?export=view&id=1A1p7TBOcLVpuU4PpZ9hP8KccsuALvutF", large: "https://drive.google.com/uc?export=view&id=1EUjgHQ-Q3PE03gaCRi7Iw_58H9pjcViI"}},
-         {pgWidth: 1  , w: 2141, h: 554 , url: {small: "https://drive.google.com/uc?export=view&id=1ZQJxrzpk_iFVVMYrWPZIDeWNkQbFmkeN", large: "https://drive.google.com/uc?export=view&id=1sBrg1vEi3sPibxlh5eapbEFVJXgnipPo"}},
+         {pgWidth: 1/2, w: 2141, h: 3193, url: {small: "https://lh3.google.com/u/0/d/11k7y4ZLjou6D4s5vKYvWy2TpwHcF9JUT", large: "https://lh3.google.com/u/0/d/1gnK-z1AdkdI6srUh8mZolJpk7JXOLDOe"}},
+         {pgWidth: 1/2, w: 2134, h: 3193, url: {small: "https://lh3.google.com/u/0/d/1GPuhAXzsIBef7jiOLhSBcY54c7xMQ5Nw", large: "https://lh3.google.com/u/0/d/1cxxBFs7wU2_W_jqrec60r3Enn_Qa7Opo"}},
+         {pgWidth: 1/3, w: 640 , h: 604 , url: {small: "https://lh3.google.com/u/0/d/1E-SOdWAjDAhvQ9EbLNl5v-INRizqo9OR", large: "https://lh3.google.com/u/0/d/11zck80LwXeIbMTp0KjG9FXDCdxTthw7_"}},
+         {pgWidth: 1/3, w: 2141, h: 2259, url: {small: "https://lh3.google.com/u/0/d/1Hfxk3ymr_IZBzFXMSNlj7qP7D5g0NyLV", large: "https://lh3.google.com/u/0/d/16ZV9XIUVh2r1kIWZa1f9umQpQaMs4Uo5"}},
+         {pgWidth: 1/3, w: 2141, h: 1825, url: {small: "https://lh3.google.com/u/0/d/1A1p7TBOcLVpuU4PpZ9hP8KccsuALvutF", large: "https://lh3.google.com/u/0/d/1EUjgHQ-Q3PE03gaCRi7Iw_58H9pjcViI"}},
+         {pgWidth: 1  , w: 2141, h: 554 , url: {small: "https://lh3.google.com/u/0/d/1ZQJxrzpk_iFVVMYrWPZIDeWNkQbFmkeN", large: "https://lh3.google.com/u/0/d/1sBrg1vEi3sPibxlh5eapbEFVJXgnipPo"}},
       ]
    };
 
@@ -169,10 +169,10 @@ export default function Works() {
          {linkText: "repo", url: "https://github.com/cs481-ekh/f22-viz-kids"}
       ],
       images: [
-         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://drive.google.com/uc?export=view&id=1upqb9e9st-5GdRWyGvjT4lyuJy6YjXmJ", large: "https://drive.google.com/uc?export=view&id=19m_-A74W_B1zWyDcxXbmMVJJLT0x8sFD"}},
-         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://drive.google.com/uc?export=view&id=1H95FnGXoO8a4t9pyF7t0eVMBgu830-QS", large: "https://drive.google.com/uc?export=view&id=1kjyfqBLoUxYX303JKAFAjzyq7a005GD0"}},
-         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://drive.google.com/uc?export=view&id=1YGx300Y5AY6O24X7md25p3-FDW7WyUEH", large: "https://drive.google.com/uc?export=view&id=1jPBvFOVrIarbKkUwLiE6jshbl6JIe9n0"}},
-         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://drive.google.com/uc?export=view&id=1a_tiaPhs6NuhD0QSJtAAYfiklluRmKLj", large: "https://drive.google.com/uc?export=view&id=1RSxZ0iQ2DjIVMu_cO2y1gbCkNLq3ANJw"}},
+         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://lh3.google.com/u/0/d/1upqb9e9st-5GdRWyGvjT4lyuJy6YjXmJ", large: "https://lh3.google.com/u/0/d/19m_-A74W_B1zWyDcxXbmMVJJLT0x8sFD"}},
+         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://lh3.google.com/u/0/d/1H95FnGXoO8a4t9pyF7t0eVMBgu830-QS", large: "https://lh3.google.com/u/0/d/1kjyfqBLoUxYX303JKAFAjzyq7a005GD0"}},
+         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://lh3.google.com/u/0/d/1YGx300Y5AY6O24X7md25p3-FDW7WyUEH", large: "https://lh3.google.com/u/0/d/1jPBvFOVrIarbKkUwLiE6jshbl6JIe9n0"}},
+         {pgWidth: 1/2, w: 800, h: 599, url: {small: "https://lh3.google.com/u/0/d/1a_tiaPhs6NuhD0QSJtAAYfiklluRmKLj", large: "https://lh3.google.com/u/0/d/1RSxZ0iQ2DjIVMu_cO2y1gbCkNLq3ANJw"}},
       ]
    };
 
@@ -186,8 +186,8 @@ export default function Works() {
          {linkText: "repo", url: "https://github.com/PTLux1517/code-128a-barcode-encoder"}
       ],
       images: [
-         {pgWidth: 1/2, w: 846, h: 1242, url: {small: "https://drive.google.com/uc?export=view&id=1OGQRK-nQiaYpxP3-1EWIIrWmD5zRN9-m", large: "https://drive.google.com/uc?export=view&id=1PtcxbyiL__HICoJHmExH07_cCWjkpfzp"}},
-         {pgWidth: 1/2, w: 864, h: 1004, url: {small: "https://drive.google.com/uc?export=view&id=1_7Bws1aLZjN9mA2EpkESP9seWEvKjcvB", large: "https://drive.google.com/uc?export=view&id=1BLiDhfQIOJe1xFvyIoYm27519QIZNaoj"}},
+         {pgWidth: 1/2, w: 846, h: 1242, url: {small: "https://lh3.google.com/u/0/d/1OGQRK-nQiaYpxP3-1EWIIrWmD5zRN9-m", large: "https://lh3.google.com/u/0/d/1PtcxbyiL__HICoJHmExH07_cCWjkpfzp"}},
+         {pgWidth: 1/2, w: 864, h: 1004, url: {small: "https://lh3.google.com/u/0/d/1_7Bws1aLZjN9mA2EpkESP9seWEvKjcvB", large: "https://lh3.google.com/u/0/d/1BLiDhfQIOJe1xFvyIoYm27519QIZNaoj"}},
       ]
    };
 
@@ -197,14 +197,14 @@ export default function Works() {
       gitHubPage: false,
       blurb: <>third-person mech combat</>,
       images: [
-         {pgWidth: 1/2, w: 2088, h: 1137, url: {small: "https://drive.google.com/uc?export=view&id=17huKnbJUT0M7ad3Ex0bwituWRP3I8OHu", large: "https://img.itch.zone/aW1nLzYyNzc2MTgucG5n/original/gWI0R6.png"}},
-         {pgWidth: 1/2, w: 2038, h: 1144, url: {small: "https://drive.google.com/uc?export=view&id=1elI3ZZm8JHMtEzPn0aqxR8KlCht04ogZ", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDI5LnBuZw==/original/OtCIYm.png"}},
-         {pgWidth: 1/3, w: 2040, h: 1144, url: {small: "https://drive.google.com/uc?export=view&id=1L8Rgst9e5gUBimbX_scYaHth4e-9WbNo", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDEzLnBuZw==/original/KAquB5.png"}},
-         {pgWidth: 1/3, w: 2038, h: 1141, url: {small: "https://drive.google.com/uc?export=view&id=1qwF9L-yOGMHFj13H2-jUY8GW3Ld_SWwi", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MzE2LnBuZw==/original/%2BHTqV%2B.png"}},
-         {pgWidth: 1/3, w: 2039, h: 1140, url: {small: "https://drive.google.com/uc?export=view&id=1rUMDJChiz1mXgNr51TeQyxFRnEKy3LEH", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU4LnBuZw==/original/o%2B43tF.png"}},
-         {pgWidth: 1/3, w: 2037, h: 1138, url: {small: "https://drive.google.com/uc?export=view&id=1abc2ZQ7RE_WhZ9HGgzy9QNRZLnENtvQU", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU0LnBuZw==/original/wXxS60.png"}},
-         {pgWidth: 1/3, w: 2036, h: 1139, url: {small: "https://drive.google.com/uc?export=view&id=1HicpP76DRly42Iwn8U8oUV_jxwf4k08D", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTUwLnBuZw==/original/XEf3ss.png"}},
-         {pgWidth: 1/3, w: 2082, h: 1137, url: {small: "https://drive.google.com/uc?export=view&id=1yevWfCWwOmjWfICtlO-xvqZhcnNHofKS", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MjkyLnBuZw==/original/PMHw0U.png"}}
+         {pgWidth: 1/2, w: 2088, h: 1137, url: {small: "https://lh3.google.com/u/0/d/17huKnbJUT0M7ad3Ex0bwituWRP3I8OHu", large: "https://img.itch.zone/aW1nLzYyNzc2MTgucG5n/original/gWI0R6.png"}},
+         {pgWidth: 1/2, w: 2038, h: 1144, url: {small: "https://lh3.google.com/u/0/d/1elI3ZZm8JHMtEzPn0aqxR8KlCht04ogZ", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDI5LnBuZw==/original/OtCIYm.png"}},
+         {pgWidth: 1/3, w: 2040, h: 1144, url: {small: "https://lh3.google.com/u/0/d/1L8Rgst9e5gUBimbX_scYaHth4e-9WbNo", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NDEzLnBuZw==/original/KAquB5.png"}},
+         {pgWidth: 1/3, w: 2038, h: 1141, url: {small: "https://lh3.google.com/u/0/d/1qwF9L-yOGMHFj13H2-jUY8GW3Ld_SWwi", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MzE2LnBuZw==/original/%2BHTqV%2B.png"}},
+         {pgWidth: 1/3, w: 2039, h: 1140, url: {small: "https://lh3.google.com/u/0/d/1rUMDJChiz1mXgNr51TeQyxFRnEKy3LEH", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU4LnBuZw==/original/o%2B43tF.png"}},
+         {pgWidth: 1/3, w: 2037, h: 1138, url: {small: "https://lh3.google.com/u/0/d/1abc2ZQ7RE_WhZ9HGgzy9QNRZLnENtvQU", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTU0LnBuZw==/original/wXxS60.png"}},
+         {pgWidth: 1/3, w: 2036, h: 1139, url: {small: "https://lh3.google.com/u/0/d/1HicpP76DRly42Iwn8U8oUV_jxwf4k08D", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0NTUwLnBuZw==/original/XEf3ss.png"}},
+         {pgWidth: 1/3, w: 2082, h: 1137, url: {small: "https://lh3.google.com/u/0/d/1yevWfCWwOmjWfICtlO-xvqZhcnNHofKS", large: "https://img.itch.zone/aW1hZ2UvMTA5MDQzNi82Mjg0MjkyLnBuZw==/original/PMHw0U.png"}}
       ],
       video: "https://www.youtube.com/embed/AdHmx18_ZNc"
    };
@@ -215,14 +215,14 @@ export default function Works() {
       gitHubPage: false,
       blurb: <>low-poly runner</>,
       images: [
-         {pgWidth: 1/2, w: 1914, h: 889 , url: {small: "https://drive.google.com/uc?export=view&id=10xRq5Mvbqq_cB23s_MZjJBk-tBZ7Y2Zu", large: "https://img.itch.zone/aW1nLzY0MDgzMzgucG5n/original/4oJUDF.png"}},
-         {pgWidth: 1/2, w: 1918, h: 1080, url: {small: "https://drive.google.com/uc?export=view&id=1VQ0LsL_5ooOZEu8zvLTuI9Ei50adhtxX", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzYxLnBuZw==/original/FaK%2BQX.png"}},
-         {pgWidth: 1/3, w: 2045, h: 1151, url: {small: "https://drive.google.com/uc?export=view&id=18Yke5G4F7qw71Om1pSp-5pe-5VnWjWkC", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzM4LnBuZw==/original/AD%2FgnL.png"}},
-         {pgWidth: 1/3, w: 1916, h: 1075, url: {small: "https://drive.google.com/uc?export=view&id=1_n3UHeKwLXORvtqdzKiKhR9eCsl7YkkN", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzY2LnBuZw==/original/B7IGpq.png"}},
-         {pgWidth: 1/3, w: 1919, h: 1078, url: {small: "https://drive.google.com/uc?export=view&id=1HqBtUAA4osPtSjW0UfAX_z-V5imiqFc_", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2Mzc0LnBuZw==/original/rrUhAL.png"}},
-         {pgWidth: 1/3, w: 1915, h: 1076, url: {small: "https://drive.google.com/uc?export=view&id=1jfGUuOb2W3lZmTxSlkov1uq4otR9DMHA", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDI3LnBuZw==/original/%2FT7kX8.png"}},
-         {pgWidth: 1/3, w: 1919, h: 1079, url: {small: "https://drive.google.com/uc?export=view&id=1RUmpTIh_vFpOZhtDKnPmiRNIiWrVqTZ2", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDMzLnBuZw==/original/ly3ZG5.png"}},
-         {pgWidth: 1/3, w: 1917, h: 1077, url: {small: "https://drive.google.com/uc?export=view&id=1LVjPUsc72TDH6bZkB3QRZr2qcupTVZz5", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDA1LnBuZw==/original/bzU%2BLF.png"}},
+         {pgWidth: 1/2, w: 1914, h: 889 , url: {small: "https://lh3.google.com/u/0/d/10xRq5Mvbqq_cB23s_MZjJBk-tBZ7Y2Zu", large: "https://img.itch.zone/aW1nLzY0MDgzMzgucG5n/original/4oJUDF.png"}},
+         {pgWidth: 1/2, w: 1918, h: 1080, url: {small: "https://lh3.google.com/u/0/d/1VQ0LsL_5ooOZEu8zvLTuI9Ei50adhtxX", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzYxLnBuZw==/original/FaK%2BQX.png"}},
+         {pgWidth: 1/3, w: 2045, h: 1151, url: {small: "https://lh3.google.com/u/0/d/18Yke5G4F7qw71Om1pSp-5pe-5VnWjWkC", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzM4LnBuZw==/original/AD%2FgnL.png"}},
+         {pgWidth: 1/3, w: 1916, h: 1075, url: {small: "https://lh3.google.com/u/0/d/1_n3UHeKwLXORvtqdzKiKhR9eCsl7YkkN", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2MzY2LnBuZw==/original/B7IGpq.png"}},
+         {pgWidth: 1/3, w: 1919, h: 1078, url: {small: "https://lh3.google.com/u/0/d/1HqBtUAA4osPtSjW0UfAX_z-V5imiqFc_", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2Mzc0LnBuZw==/original/rrUhAL.png"}},
+         {pgWidth: 1/3, w: 1915, h: 1076, url: {small: "https://lh3.google.com/u/0/d/1jfGUuOb2W3lZmTxSlkov1uq4otR9DMHA", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDI3LnBuZw==/original/%2FT7kX8.png"}},
+         {pgWidth: 1/3, w: 1919, h: 1079, url: {small: "https://lh3.google.com/u/0/d/1RUmpTIh_vFpOZhtDKnPmiRNIiWrVqTZ2", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDMzLnBuZw==/original/ly3ZG5.png"}},
+         {pgWidth: 1/3, w: 1917, h: 1077, url: {small: "https://lh3.google.com/u/0/d/1LVjPUsc72TDH6bZkB3QRZr2qcupTVZz5", large: "https://img.itch.zone/aW1hZ2UvMTEwOTQwNC82NDA2NDA1LnBuZw==/original/bzU%2BLF.png"}},
       ],
       video: "https://www.youtube.com/embed/Z7R8HRskiFw"
    };
@@ -233,14 +233,14 @@ export default function Works() {
       gitHubPage: false,
       blurb: <>dungeon/maze crawler with flight</>,
       images: [
-         {pgWidth: 1/2, w: 1452, h: 817, url: {small: "https://drive.google.com/uc?export=view&id=1QYguAuYmIeJiCLaBG4Had4GEujKE4W2B", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3OTY0LnBuZw==/original/BG7%2Bm8.png"}},
-         {pgWidth: 1/2, w: 1657, h: 934, url: {small: "https://drive.google.com/uc?export=view&id=1rr5INdtWPao4coO6WcS-aGdrPAKOCxRj", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDk1LnBuZw==/original/KR%2FODw.png"}},
-         {pgWidth: 1/3, w: 1656, h: 927, url: {small: "https://drive.google.com/uc?export=view&id=13Y1XVcHN9oNSzlvZ3XEWpzIqgRg9stgy", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDYwLnBuZw==/original/t845d8.png"}},
-         {pgWidth: 1/3, w: 1661, h: 932, url: {small: "https://drive.google.com/uc?export=view&id=1PviAhMThVft84Qgn3oNw0Ogg3FRv-UK0", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTI4LnBuZw==/original/OXG%2BCD.png"}},
-         {pgWidth: 1/3, w: 1662, h: 934, url: {small: "https://drive.google.com/uc?export=view&id=1PPBWuDZwP64gXhYZ7JUIX-QIoMMz_V46", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDQ5LnBuZw==/original/BlAxW7.png"}},
-         {pgWidth: 1/3, w: 1660, h: 931, url: {small: "https://drive.google.com/uc?export=view&id=1ebY9RfLPSO80wSvEYW1xbFg2ki4zm3_K", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTE1LnBuZw==/original/GJAhjs.png"}},
-         {pgWidth: 1/3, w: 1664, h: 934, url: {small: "https://drive.google.com/uc?export=view&id=1YKD6hruapLmXqJWszd4LrERuQM-2KzBO", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTIxLnBuZw==/original/iFPRLd.png"}},
-         {pgWidth: 1/3, w: 1662, h: 935, url: {small: "https://drive.google.com/uc?export=view&id=1fgArXv8C3AmCYcVmDPXt2pi0VPqd14su", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTc5LnBuZw==/original/a%2FC0Ow.png"}},
+         {pgWidth: 1/2, w: 1452, h: 817, url: {small: "https://lh3.google.com/u/0/d/1QYguAuYmIeJiCLaBG4Had4GEujKE4W2B", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3OTY0LnBuZw==/original/BG7%2Bm8.png"}},
+         {pgWidth: 1/2, w: 1657, h: 934, url: {small: "https://lh3.google.com/u/0/d/1rr5INdtWPao4coO6WcS-aGdrPAKOCxRj", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDk1LnBuZw==/original/KR%2FODw.png"}},
+         {pgWidth: 1/3, w: 1656, h: 927, url: {small: "https://lh3.google.com/u/0/d/13Y1XVcHN9oNSzlvZ3XEWpzIqgRg9stgy", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDYwLnBuZw==/original/t845d8.png"}},
+         {pgWidth: 1/3, w: 1661, h: 932, url: {small: "https://lh3.google.com/u/0/d/1PviAhMThVft84Qgn3oNw0Ogg3FRv-UK0", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTI4LnBuZw==/original/OXG%2BCD.png"}},
+         {pgWidth: 1/3, w: 1662, h: 934, url: {small: "https://lh3.google.com/u/0/d/1PPBWuDZwP64gXhYZ7JUIX-QIoMMz_V46", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NDQ5LnBuZw==/original/BlAxW7.png"}},
+         {pgWidth: 1/3, w: 1660, h: 931, url: {small: "https://lh3.google.com/u/0/d/1ebY9RfLPSO80wSvEYW1xbFg2ki4zm3_K", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTE1LnBuZw==/original/GJAhjs.png"}},
+         {pgWidth: 1/3, w: 1664, h: 934, url: {small: "https://lh3.google.com/u/0/d/1YKD6hruapLmXqJWszd4LrERuQM-2KzBO", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTIxLnBuZw==/original/iFPRLd.png"}},
+         {pgWidth: 1/3, w: 1662, h: 935, url: {small: "https://lh3.google.com/u/0/d/1fgArXv8C3AmCYcVmDPXt2pi0VPqd14su", large: "https://img.itch.zone/aW1hZ2UvMTA2NjU2My82MTA3NTc5LnBuZw==/original/a%2FC0Ow.png"}},
       ],
       video: "https://www.youtube.com/embed/dzEwrDTMOtI"
    };
@@ -251,13 +251,13 @@ export default function Works() {
       gitHubPage: false,
       blurb: <>dungeon crawler with puzzles</>,
       images: [
-         {pgWidth: 1/2, w: 873 , h: 491, url: {small: "https://drive.google.com/uc?export=view&id=1rbmK85AfLCrkJXf5F9rz6-mw9Ef525Gm", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5Njg5LnBuZw==/original/2o0OYt.png"}},
-         {pgWidth: 1/2, w: 1526, h: 869, url: {small: "https://drive.google.com/uc?export=view&id=1rGiOumNAVer8dv6LUxhRPo6b6CLv2IFz", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NjkwLnBuZw==/original/xpCJnd.png"}},
-         {pgWidth: 1/2, w: 1770, h: 993, url: {small: "https://drive.google.com/uc?export=view&id=14EJSTlaXZIj9WU3M8khTk8_2HFBhY52g", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzU3LnBuZw==/original/oYGR0x.png"}},
-         {pgWidth: 1/2, w: 1770, h: 994, url: {small: "https://drive.google.com/uc?export=view&id=1NoeGBCwNjBF_DxM86WRZnO2-dgA9K_eM", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzQ4LnBuZw==/original/xVPl94.png"}},
-         {pgWidth: 1/3, w: 1766, h: 995, url: {small: "https://drive.google.com/uc?export=view&id=1ZJowcUX4kqVoVNeaHxWRN06vnSXIdxag", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzYyLnBuZw==/original/yo7MZ%2F.png"}},
-         {pgWidth: 1/3, w: 1771, h: 996, url: {small: "https://drive.google.com/uc?export=view&id=16wWlw_9gTyYhYXqDuBR8ZaECrqcbfC94", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzA3LnBuZw==/original/5IhAVH.png"}},
-         {pgWidth: 1/3, w: 1769, h: 995, url: {small: "https://drive.google.com/uc?export=view&id=1rQ39cX__t6NNlyYto6TmjtY0mDu92dpn", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzE0LnBuZw==/original/PQgro8.png"}},
+         {pgWidth: 1/2, w: 873 , h: 491, url: {small: "https://lh3.google.com/u/0/d/1rbmK85AfLCrkJXf5F9rz6-mw9Ef525Gm", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5Njg5LnBuZw==/original/2o0OYt.png"}},
+         {pgWidth: 1/2, w: 1526, h: 869, url: {small: "https://lh3.google.com/u/0/d/1rGiOumNAVer8dv6LUxhRPo6b6CLv2IFz", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NjkwLnBuZw==/original/xpCJnd.png"}},
+         {pgWidth: 1/2, w: 1770, h: 993, url: {small: "https://lh3.google.com/u/0/d/14EJSTlaXZIj9WU3M8khTk8_2HFBhY52g", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzU3LnBuZw==/original/oYGR0x.png"}},
+         {pgWidth: 1/2, w: 1770, h: 994, url: {small: "https://lh3.google.com/u/0/d/1NoeGBCwNjBF_DxM86WRZnO2-dgA9K_eM", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzQ4LnBuZw==/original/xVPl94.png"}},
+         {pgWidth: 1/3, w: 1766, h: 995, url: {small: "https://lh3.google.com/u/0/d/1ZJowcUX4kqVoVNeaHxWRN06vnSXIdxag", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzYyLnBuZw==/original/yo7MZ%2F.png"}},
+         {pgWidth: 1/3, w: 1771, h: 996, url: {small: "https://lh3.google.com/u/0/d/16wWlw_9gTyYhYXqDuBR8ZaECrqcbfC94", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzA3LnBuZw==/original/5IhAVH.png"}},
+         {pgWidth: 1/3, w: 1769, h: 995, url: {small: "https://lh3.google.com/u/0/d/1rQ39cX__t6NNlyYto6TmjtY0mDu92dpn", large: "https://img.itch.zone/aW1hZ2UvMTA1NzEzNC82MDQ5NzE0LnBuZw==/original/PQgro8.png"}},
       ],
       video: "https://www.youtube.com/embed/qGv7wtGdXeM"
    };
@@ -268,10 +268,10 @@ export default function Works() {
       gitHubPage: false,
       blurb: <>space flight survival</>,
       images: [
-         {pgWidth: 1/2, w: 1276, h: 719 , url: {small: "https://drive.google.com/uc?export=view&id=1LkZTmj-t6uoUHxOXR-yCFh1Bb8Nsz6oz", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxMzY0LnBuZw==/original/N8DyNS.png"}},
-         {pgWidth: 1/2, w: 1578, h: 1019, url: {small: "https://drive.google.com/uc?export=view&id=1Bd4P3SAroIfZmGscGD9uVip-wuC2Twx-", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDE1LnBuZw==/original/ZRp4ZB.png"}},
-         {pgWidth: 1/2, w: 2213, h: 1246, url: {small: "https://drive.google.com/uc?export=view&id=1HSbRlpX2Low5NqdeTDfs-r-AzYm0mw09", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDQ3LnBuZw==/original/LOVxb8.png"}},
-         {pgWidth: 1/2, w: 2600, h: 1463, url: {small: "https://drive.google.com/uc?export=view&id=1T4ofTEhEMhdguJrxKThwfdRGv9vr224c", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDU2LnBuZw==/original/wApqIu.png"}},
+         {pgWidth: 1/2, w: 1276, h: 719 , url: {small: "https://lh3.google.com/u/0/d/1LkZTmj-t6uoUHxOXR-yCFh1Bb8Nsz6oz", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxMzY0LnBuZw==/original/N8DyNS.png"}},
+         {pgWidth: 1/2, w: 1578, h: 1019, url: {small: "https://lh3.google.com/u/0/d/1Bd4P3SAroIfZmGscGD9uVip-wuC2Twx-", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDE1LnBuZw==/original/ZRp4ZB.png"}},
+         {pgWidth: 1/2, w: 2213, h: 1246, url: {small: "https://lh3.google.com/u/0/d/1HSbRlpX2Low5NqdeTDfs-r-AzYm0mw09", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDQ3LnBuZw==/original/LOVxb8.png"}},
+         {pgWidth: 1/2, w: 2600, h: 1463, url: {small: "https://lh3.google.com/u/0/d/1T4ofTEhEMhdguJrxKThwfdRGv9vr224c", large: "https://img.itch.zone/aW1hZ2UvMTA0NjQ5OC81OTgxNDU2LnBuZw==/original/wApqIu.png"}},
       ],
       video: "https://www.youtube.com/embed/TtBE7kOhu-c"
    };
