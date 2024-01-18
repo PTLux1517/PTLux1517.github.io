@@ -52,7 +52,7 @@ export default function Transcript() {
       </div>
       {loading && <div id="loading-text">Loading transcript...</div>}
       <img ref={imgElem} id="transcript-image"
-         src="https://drive.google.com/uc?export=view&id=1eGdaJYd9aIsgFdNsBALQpGiObwP--f7N"
+         src="https://lh3.google.com/u/0/d/1eGdaJYd9aIsgFdNsBALQpGiObwP--f7N"
          alt="college transcript"
          style={{width: "4950px"}}
          onLoad={() => setLoading(false)}
