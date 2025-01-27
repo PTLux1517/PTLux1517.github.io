@@ -176,6 +176,18 @@ export default function Works() {
       ]
    };
 
+   const axleWeightCalculatorInfo:ProjectInfo = {
+      name: "axle-weight-calculator",
+      mainLink: "https://ptlux1517.github.io/axle-weight-calculator",
+      gitHubPage: true,
+      blurb: <>A reactive tool for planning semi truck loads and simulating the resulting weight distribution</>,
+      iconsDiv: <div><TypeScriptIcon/><ReactIcon/></div>,
+      otherLinks: [
+         {linkText: "repo", url: "https://github.com/PTLux1517/axle-weight-calculator"}
+      ],
+      images: []
+   }
+
    const code128ABarcodeEncoderInfo:ProjectInfo = {
       name: "code-128a-barcode-encoder",
       mainLink: "https://ptlux1517.github.io/code-128a-barcode-encoder/",
@@ -288,6 +300,7 @@ export default function Works() {
          GitHub Pages
       </h2><GitHubPagesComboIcon/></span></div>
       {render(moviloInfo)}
+      {render(axleWeightCalculatorInfo)}
       {render(code128ABarcodeEncoderInfo)}
 
       <div className="spacer"><span className="text-icon-span h2-bg"><h2 className="no-underline">
